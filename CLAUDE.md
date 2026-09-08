@@ -82,20 +82,50 @@ descreve o projeto: nome do single, conceito de capa, era.
 
 ### Pendências conhecidas desta fundação
 
-- A API (`https://tanstack-start-app.empirerpg-forum.workers.dev`) não pôde
-  ser testada durante a criação deste repositório porque a rede da sessão
-  bloqueou a conexão por política de proxy (não é um erro da própria API).
-  Isso significa que **ninguém rodou `sincronizar.mjs` com sucesso ainda** —
-  `dados/*.json` do catálogo do jogo ainda não existem. Antes de montar
-  qualquer roteiro, rodar a sincronização e confirmar que os arquivos
-  apareceram.
-- Ainda não se sabe se `/api/artistas/infos` tem um campo com URL de foto do
-  artista (necessário para o quadro Shopping). Checar isso na primeira vez
-  que `dados/artistasInfos.json` existir, procurando chaves como `foto`,
-  `imagem`, `avatar`, `photoUrl` ou similar nos registros.
+- A API (`https://tanstack-start-app.empirerpg-forum.workers.dev`) ainda não
+  pôde ser chamada com sucesso a partir de nenhuma sessão de trabalho — a
+  rede bloqueia a conexão por política de proxy (não é um erro da própria
+  API). Isso significa que **ninguém rodou `sincronizar.mjs` com sucesso
+  ainda** — `dados/*.json` do catálogo do jogo ainda não existem. Antes de
+  montar qualquer roteiro ou implementar um quadro que dependa de dados
+  reais, rodar a sincronização (de uma máquina com rede livre) e confirmar
+  que os arquivos apareceram.
+- As URLs em `config/fontes.json` foram conferidas direto no código-fonte do
+  backend (`empirerpg-max/empirefinal`, `backend/src/routes/api.ts` e
+  controllers). `musicas`, `albuns`, `musicVideos`, `lancamentos` e
+  `artistas` (listar-todos) são GETs simples e batem certinho. **Dois
+  endpoints foram removidos do sync em massa por não serem GETs simples:**
+  - `/api/charts` exige `?action=...` (ex: `getChart`, `getRealTime`,
+    `getReleases`) mais parâmetros como `tab`/`date`/`style` dependendo da
+    ação — sem isso devolve `{"error": "Ação desconhecida"}`. Além disso,
+    o "chart" real é um retrato semanal (posição por rodada), não um
+    histórico pronto de picos/semanas — calcular "pico" ou "semanas em
+    chart" exigiria baixar várias semanas e cruzar manualmente. Fica como
+    trabalho futuro quando o quadro Flop ou Hit for implementado de verdade.
+  - `/api/artistas/infos` exige `?nome=<nome>` — é consulta de UM artista
+    por vez (biografia, foto, capa), não uma listagem. Não dá pra baixar em
+    massa num único GET.
+  - **A foto do artista, no entanto, já vem de graça em `artistas.json`**
+    (endpoint `/api/artistas/listar-todos`, campo `foto`, sempre uma URL ou
+    string vazia) — confirmado lendo `getAllArtistasController` no backend.
+    Não precisa do endpoint `/infos` pra isso.
 - As URLs de CSV em `config/fontes.json` (bloco `"programa"`) estão vazias —
-  Gary precisa preenchê-las com os links de "Publicar na Web" das abas
-  Episódios, Shopping e Feat da planilha dele.
+  Gary precisa preenchê-las com os links de "Publicar na Web" de cada aba da
+  planilha do programa (ver seção "Planilha do programa" abaixo).
+
+### Planilha do programa
+
+Gary já iniciou a planilha em:
+https://docs.google.com/spreadsheets/d/1F2c1c_ntDcP0iRU_hBPCFvuqZWw-p4bD9ZPfUxoZ2Oc/edit
+
+Ela tem uma aba com a estrutura da aba Shopping (Loja | Artista), já com 2
+das 6 lojas preenchidas. Ainda faltam: renomear a aba pra `Shopping`
+exatamente, adicionar uma coluna `Foto` (mesmo que o quadro normalmente use
+a foto do catálogo via `artistas.json`, serve de reserva pra artista sem
+foto cadastrada ou pra imagem específica daquela aparição), e criar as abas
+`Episodios` e `Feat`. Claude não tem uma ferramenta de escrita direta em
+células de Google Sheets já existentes nesta sessão — isso fica por conta
+de Gary editar manualmente, com Claude dando a estrutura exata de colunas.
 
 ## Instrução obrigatória para pautas e roteiros
 

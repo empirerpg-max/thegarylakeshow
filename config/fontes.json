@@ -5,9 +5,7 @@
     "albuns": "/api/empire-play/albuns",
     "musicVideos": "/api/empire-play/music-videos",
     "lancamentos": "/api/empire-play/lancamentos-recentes",
-    "charts": "/api/charts",
-    "artistas": "/api/artistas/listar-todos",
-    "artistasInfos": "/api/artistas/infos"
+    "artistas": "/api/artistas/listar-todos"
   },
   "programa": {
     "Episodios": "",
