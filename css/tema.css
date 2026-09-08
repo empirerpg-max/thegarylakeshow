@@ -1,0 +1,39 @@
+/* Identidade visual do The Gary Lake Show. Variáveis compartilhadas por todas as telas. */
+:root {
+  --fundo: #131316;
+  --fundo-elevado: #1E1E23;
+  --texto: #F4F1EA;
+  --amarelo: #F5C63F;
+  --rosa: #F09CC4;
+  --azul: #3E6FE8;
+  --fogo-laranja: #F4903C;
+  --fogo-vermelho: #E5442A;
+  --fonte-titulo: 'DM Serif Display', Georgia, serif;
+  --fonte-texto: system-ui, sans-serif;
+}
+
+/* --fogo-laranja e --fogo-vermelho são só para a animação de explosão do
+   quadro Shopping. Não usar em outro lugar: a explosão perde o impacto se
+   essas cores aparecerem em qualquer outro contexto do palco. */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: var(--fonte-texto);
+}
+
+h1, h2, h3, .titulo {
+  font-family: var(--fonte-titulo);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+}

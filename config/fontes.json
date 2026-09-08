@@ -1,0 +1,17 @@
+{
+  "apiBase": "https://tanstack-start-app.empirerpg-forum.workers.dev",
+  "endpoints": {
+    "musicas": "/api/empire-play/musicas",
+    "albuns": "/api/empire-play/albuns",
+    "musicVideos": "/api/empire-play/music-videos",
+    "lancamentos": "/api/empire-play/lancamentos-recentes",
+    "charts": "/api/charts",
+    "artistas": "/api/artistas/listar-todos",
+    "artistasInfos": "/api/artistas/infos"
+  },
+  "programa": {
+    "Episodios": "",
+    "Shopping": "",
+    "Feat": ""
+  }
+}

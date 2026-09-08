@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palco — The Gary Lake Show</title>
+  <link rel="stylesheet" href="css/tema.css" />
+  <link rel="stylesheet" href="css/palco.css" />
+</head>
+<body class="palco">
+  <!--
+    REGRA CRÍTICA: nenhuma resposta, dica, gabarito ou foto de revelação pode
+    existir neste HTML antes da hora. Este arquivo só mostra a tela vazia
+    (logo estático). Todo conteúdo de quadro é injetado em tempo real via
+    js/sync.js, a partir do que o controle.html manda — nunca escrito aqui.
+  -->
+  <div id="quadro-atual">
+    <div class="palco-vazio">
+      <div class="logo">THE GARY <span class="rosa">LAKE</span> <span class="azul">SHOW</span></div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { aoReceber } from './js/sync.js';
+
+    const quadroAtual = document.getElementById('quadro-atual');
+
+    aoReceber((mensagem) => {
+      console.log('palco recebeu:', mensagem);
+      // A lógica de cada quadro (js/quadros/*) vai escutar aqui e renderizar
+      // dentro de #quadro-atual. Por enquanto, esta fundação só recebe e loga.
+    });
+  </script>
+</body>
+</html>

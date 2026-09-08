@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Gary Lake Show</title>
+  <link rel="stylesheet" href="css/tema.css" />
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .logo {
+      font-size: clamp(2rem, 5vw, 4rem);
+      color: var(--amarelo);
+    }
+    .logo .rosa { color: var(--rosa); }
+    .logo .azul { color: var(--azul); }
+    .botoes { display: flex; gap: 1rem; }
+    .botoes a {
+      display: inline-block;
+      padding: 0.8rem 1.6rem;
+      border: 1px solid var(--fundo-elevado);
+      border-radius: 4px;
+      text-decoration: none;
+      color: var(--texto);
+      font-family: var(--fonte-texto);
+    }
+    .botoes a:hover { border-color: var(--rosa); }
+  </style>
+</head>
+<body>
+  <div class="logo">THE GARY <span class="rosa">LAKE</span> <span class="azul">SHOW</span></div>
+  <div class="botoes">
+    <a href="palco.html" target="_blank" rel="noopener">Abrir Palco</a>
+    <a href="controle.html" target="_blank" rel="noopener">Abrir Controle</a>
+  </div>
+</body>
+</html>

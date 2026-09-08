@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Controle — The Gary Lake Show</title>
+  <link rel="stylesheet" href="css/tema.css" />
+  <style>
+    body { padding: 2rem; max-width: 720px; margin: 0 auto; }
+    .campo { margin-bottom: 1.5rem; }
+    label { display: block; margin-bottom: 0.5rem; color: var(--amarelo); }
+    select, button {
+      background: var(--fundo-elevado);
+      color: var(--texto);
+      border: 1px solid var(--fundo-elevado);
+      padding: 0.6rem 1rem;
+      font-family: var(--fonte-texto);
+      font-size: 1rem;
+      border-radius: 4px;
+    }
+    button { cursor: pointer; border-color: var(--azul); }
+    button:hover { border-color: var(--rosa); }
+    #status { color: var(--rosa); font-size: 0.9rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <!-- Este painel é só do apresentador. Nunca compartilhar esta tela ao vivo. -->
+  <h1 class="titulo">Controle</h1>
+
+  <div class="campo">
+    <label for="seletor-episodio">Episódio</label>
+    <select id="seletor-episodio">
+      <option value="">— nenhum carregado ainda —</option>
+    </select>
+  </div>
+
+  <div class="campo">
+    <label for="seletor-quadro">Quadro</label>
+    <select id="seletor-quadro">
+      <option value="">Palco vazio (logo)</option>
+      <option value="shopping">Shopping</option>
+      <option value="flop-ou-hit">Flop ou Hit</option>
+      <option value="arquivo-gary">Arquivo Gary</option>
+      <option value="feat-forcado">Feat Forçado</option>
+    </select>
+  </div>
+
+  <button id="btn-enviar">Enviar para o palco</button>
+
+  <div id="status"></div>
+
+  <script type="module">
+    import { enviar, aoReceber } from './js/sync.js';
+
+    const botao = document.getElementById('btn-enviar');
+    const seletorQuadro = document.getElementById('seletor-quadro');
+    const status = document.getElementById('status');
+
+    botao.addEventListener('click', () => {
+      const quadro = seletorQuadro.value;
+      enviar('mostrar-quadro', { quadro });
+      status.textContent = `Enviado: ${quadro || 'palco vazio'} — ${new Date().toLocaleTimeString('pt-BR')}`;
+    });
+
+    aoReceber((mensagem) => {
+      console.log('controle recebeu (eco):', mensagem);
+    });
+  </script>
+</body>
+</html>
