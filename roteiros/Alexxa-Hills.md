@@ -49,7 +49,7 @@ Estacionamento       → Poxxie Freitas (SEM foto cadastrada em dados/artistas.j
 Gucci                → SA5M (foto cadastrada)
 Calvin Klein         → Rayna (foto cadastrada)
 We Pink              → Samantha Cooper (foto cadastrada)
-Apple Store          → Sabine (foto cadastrada)
+iPlace                → Sabine (foto cadastrada)
 ```
 
 > **Aviso:** Poxxie Freitas não está em `dados/artistas.json` (117 artistas
