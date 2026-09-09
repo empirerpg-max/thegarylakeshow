@@ -8,8 +8,8 @@
     "artistas": "/api/artistas/listar-todos"
   },
   "programa": {
-    "Episodios": "",
-    "Shopping": "",
-    "Feat": ""
+    "Episodios": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQrX0Tz3sDrVdwspu3XWrqopTGIOIWciP42BZW9nc1Lu7ySEeWMbyreyDheXRwe3RE0_kYl1jX_bt9H/pub?gid=0&single=true&output=csv",
+    "Shopping": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQrX0Tz3sDrVdwspu3XWrqopTGIOIWciP42BZW9nc1Lu7ySEeWMbyreyDheXRwe3RE0_kYl1jX_bt9H/pub?gid=1695817546&single=true&output=csv",
+    "Feat": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQrX0Tz3sDrVdwspu3XWrqopTGIOIWciP42BZW9nc1Lu7ySEeWMbyreyDheXRwe3RE0_kYl1jX_bt9H/pub?gid=1101972852&single=true&output=csv"
   }
 }

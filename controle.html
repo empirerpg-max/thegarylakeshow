@@ -94,11 +94,17 @@
     const listaPecas = document.getElementById('lista-pecas');
     const btnFecharArquivo = document.getElementById('btn-fechar-arquivo');
 
+    // O painel do Arquivo Gary aparece assim que Gary escolhe o quadro no
+    // menu — não precisa esperar clicar em "Enviar para o palco" pra ver o
+    // campo de busca (o palco em si só muda quando o botão é clicado).
+    seletorQuadro.addEventListener('change', () => {
+      painelArquivoGary.classList.toggle('ativo', seletorQuadro.value === 'arquivo-gary');
+    });
+
     botao.addEventListener('click', () => {
       const quadro = seletorQuadro.value;
       enviar('mostrar-quadro', { quadro });
       status.textContent = `Enviado: ${quadro || 'palco vazio'} — ${new Date().toLocaleTimeString('pt-BR')}`;
-      painelArquivoGary.classList.toggle('ativo', quadro === 'arquivo-gary');
       if (quadro === 'arquivo-gary') {
         enviar('arquivo-gary:capa', { convidado: campoConvidado.value || '???' });
       }
