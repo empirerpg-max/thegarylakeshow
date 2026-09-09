@@ -204,23 +204,41 @@ que o recorte em `dados/` ainda cobre o artista da vez) e atualizar
 `dados/chartsHistorico.json`/`dados/comentarios.json` manualmente — não é
 automático como o resto do catálogo.
 
-### `dados/musicas.json` e `dados/artistas.json`: também vieram do Drive, não da API
+### `dados/musicas.json`, `albuns.json`, `artistas.json`, `comentarios.json`: vieram do Drive, não da API
 
 A API pública (`empire-play/musicas`) continua bloqueada nesta rede. Em vez
-de esperar ela liberar, `dados/musicas.json` (76 faixas) e `dados/artistas.json`
-(33 nomes) foram extraídos **direto da planilha "principal" do jogo** via
-Google Drive, na aba "Musicas" — mesmo mecanismo usado pra `chartsHistorico.json`.
-Isso já é o suficiente para o Arquivo Gary funcionar de verdade com qualquer
-um desses 33 artistas (primeiro lançamento, maior hiato, e o esquecido —
-quando o artista tiver nota registrada). Faltam ainda: `dados/albuns.json`
-(a aba "Albuns" não coube nesta leitura, o arquivo é grande demais pra vir
-inteiro numa única consulta) e mais faixas se o catálogo real tiver mais de
-76 músicas (é bem provável que tenha — isso foi só o que veio nesta leitura).
-Quando a API pública for liberada, `sincronizar.mjs` deve voltar a ser a
-fonte principal (ela cobre o catálogo inteiro, isso aqui é um substituto
-manual e parcial). Até lá, se Gary pedir um artista que não está nesses 33
-nomes, é porque ele realmente não está neste recorte — não necessariamente
-porque não existe no jogo.
+de esperar ela liberar, esses quatro arquivos foram extraídos **direto da
+planilha "principal" do jogo** (ID `1XYa6Pzd-lou3fzqaZgjhBYNb3Je2PB9Slu7ozzOghUo`)
+via Google Drive — mesmo mecanismo já usado pra `chartsHistorico.json`:
+
+- `musicas.json` — 76 faixas, da aba "Musicas".
+- `albuns.json` — 71 álbuns, da aba "Albuns".
+- `artistas.json` — 33 nomes, deduzidos dos artistas que aparecem em `musicas.json`
+  (ACT PRINCIPAL + feats). Sem foto ainda (campo `foto` vazio) — a foto de
+  verdade vive na aba ARTISTAS da planilha "usuarios"
+  (`1lFw9l76tYZYCDXhZsoiftIEzCvKcjCrI_oBpvUdwAlo`), ainda não lida.
+- `comentarios.json` — 21 títulos com pelo menos 1 comentário, de uma tabela
+  de comentários encontrada na mesma leitura (85 linhas de comentário no
+  total). **Limitação importante**: essa tabela só lista títulos que TÊM
+  comentário — uma música com zero comentários simplesmente não aparece
+  aqui, então a peça "menos repercussão" só compara entre os títulos que
+  já têm pelo menos um comentário registrado, não entre todo o catálogo.
+  Uma música realmente ignorada (zero comentários) pode estar escondida
+  fora desse recorte, e o motor não tem como saber disso hoje.
+
+Isso é o suficiente pra 6 das 7 peças do Arquivo Gary funcionarem de
+verdade com qualquer um dos 33 artistas — testado com Alexxa Hills e Marco,
+ambos com múltiplas peças retornando dado real. Só "maior salto de posição"
+segue limitado, porque `chartsHistorico.json` só tem histórico completo do
+Paul Carter (ver seção anterior).
+
+**Isso é um recorte manual, não a fonte completa.** O catálogo real do jogo
+provavelmente tem mais de 76 músicas e mais de 33 artistas — esse foi só o
+volume que coube numa única leitura de Drive. Quando a API pública for
+liberada, `sincronizar.mjs` deve voltar a ser a fonte principal (cobre o
+catálogo inteiro de verdade). Até lá, se Gary pedir um artista fora desses
+33 nomes, o motor avisa "não encontrado" — o que significa "fora deste
+recorte", não necessariamente "não existe no jogo".
 
 ### Telas (implementado)
 
