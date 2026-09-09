@@ -10,6 +10,15 @@
   --fogo-vermelho: #E5442A;
   --fonte-titulo: 'DM Serif Display', Georgia, serif;
   --fonte-texto: system-ui, sans-serif;
+
+  /* Vidro (glassmorphism) — usado nos cards de todas as telas. Os brilhos de
+     fundo usam azul e rosa (cores de marca), nunca laranja/vermelho — esses
+     ficam reservados só pra explosão do Shopping. */
+  --vidro-fundo: rgba(255, 255, 255, 0.06);
+  --vidro-fundo-hover: rgba(255, 255, 255, 0.1);
+  --vidro-borda: rgba(255, 255, 255, 0.14);
+  --vidro-sombra: 0 8px 32px rgba(0, 0, 0, 0.45);
+  --vidro-blur: 18px;
 }
 
 /* --fogo-laranja e --fogo-vermelho são só para a animação de explosão do
@@ -23,9 +32,18 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: var(--fundo);
+  min-height: 100vh;
   color: var(--texto);
   font-family: var(--fonte-texto);
+  /* Fundo escuro com brilhos suaves em azul e rosa, fixos (não rolam com a
+     página) — dá o ar "vidro sobre uma luz por trás" das referências de
+     design, sem sair da paleta da marca. */
+  background-color: var(--fundo);
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(62, 111, 232, 0.25), transparent 45%),
+    radial-gradient(circle at 85% 20%, rgba(240, 156, 196, 0.18), transparent 40%),
+    radial-gradient(circle at 50% 100%, rgba(245, 198, 63, 0.08), transparent 50%);
+  background-attachment: fixed;
 }
 
 h1, h2, h3, .titulo {
@@ -36,4 +54,39 @@ h1, h2, h3, .titulo {
 
 a {
   color: inherit;
+}
+
+/* Card de vidro — a unidade visual repetida em todas as telas. */
+.cartao-vidro {
+  background: var(--vidro-fundo);
+  border: 1px solid var(--vidro-borda);
+  border-radius: 18px;
+  box-shadow: var(--vidro-sombra);
+  backdrop-filter: blur(var(--vidro-blur));
+  -webkit-backdrop-filter: blur(var(--vidro-blur));
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.cartao-vidro:hover {
+  background: var(--vidro-fundo-hover);
+}
+
+button.cartao-vidro,
+.botao-vidro {
+  cursor: pointer;
+  color: var(--texto);
+  font-family: var(--fonte-texto);
+}
+
+button.cartao-vidro:hover,
+.botao-vidro:hover {
+  border-color: var(--azul);
+}
+
+input.cartao-vidro {
+  color: var(--texto);
+}
+
+input.cartao-vidro::placeholder {
+  color: rgba(244, 241, 234, 0.5);
 }

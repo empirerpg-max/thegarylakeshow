@@ -6,48 +6,52 @@
   <title>Controle — The Gary Lake Show</title>
   <link rel="stylesheet" href="css/tema.css" />
   <style>
-    body { padding: 2rem; max-width: 720px; margin: 0 auto; }
+    body { padding: 2rem; max-width: 900px; margin: 0 auto; }
     .campo { margin-bottom: 1.5rem; }
     label { display: block; margin-bottom: 0.5rem; color: var(--amarelo); }
-    select, button {
-      background: var(--fundo-elevado);
+
+    select, button, input[type="text"] {
       color: var(--texto);
-      border: 1px solid var(--fundo-elevado);
       padding: 0.6rem 1rem;
       font-family: var(--fonte-texto);
       font-size: 1rem;
-      border-radius: 4px;
+      border-radius: 12px;
+      border: 1px solid var(--vidro-borda);
+      background: var(--vidro-fundo);
+      backdrop-filter: blur(var(--vidro-blur));
+      -webkit-backdrop-filter: blur(var(--vidro-blur));
     }
-    button { cursor: pointer; border-color: var(--azul); }
-    button:hover { border-color: var(--rosa); }
+    button { cursor: pointer; }
+    button:hover { border-color: var(--rosa); background: var(--vidro-fundo-hover); }
+    select { cursor: pointer; }
     #status { color: var(--rosa); font-size: 0.9rem; margin-top: 2rem; }
 
-    /* Painel do Arquivo Gary */
-    #painel-arquivo-gary { display: none; margin-top: 2rem; border-top: 1px solid var(--fundo-elevado); padding-top: 1.5rem; }
-    #painel-arquivo-gary.ativo { display: block; }
+    .painel {
+      display: none;
+      margin-top: 2rem;
+      padding: 1.5rem;
+    }
+    .painel.ativo { display: block; }
+
     #painel-arquivo-gary input[type="text"] {
-      background: var(--fundo-elevado); color: var(--texto); border: 1px solid var(--fundo-elevado);
-      padding: 0.6rem 1rem; font-size: 1rem; border-radius: 4px; width: 100%; max-width: 320px;
+      width: 100%; max-width: 320px;
     }
     .peca-card {
-      background: var(--fundo-elevado); border-radius: 6px; padding: 1rem; margin-bottom: 0.75rem;
+      border-radius: 14px; padding: 1rem; margin-bottom: 0.75rem;
     }
     .peca-card h3 { margin: 0 0 0.4rem; color: var(--amarelo); font-size: 1rem; }
     .peca-card .dado-principal { color: var(--rosa); font-weight: bold; margin: 0.3rem 0; }
-    .peca-card .indisponivel { color: #888; font-style: italic; }
-    .peca-card .registros { display: none; font-size: 0.85rem; color: #ccc; margin-top: 0.5rem; white-space: pre-wrap; }
+    .peca-card .indisponivel { color: #aaa; font-style: italic; }
+    .peca-card .registros { display: none; font-size: 0.85rem; color: #ddd; margin-top: 0.5rem; white-space: pre-wrap; }
     .peca-card .registros.aberto { display: block; }
     .peca-card .acoes { display: flex; gap: 0.5rem; margin-top: 0.5rem; }
     .peca-card button { font-size: 0.85rem; padding: 0.4rem 0.8rem; }
 
-    /* Painel do Shopping */
-    #painel-shopping { display: none; margin-top: 2rem; border-top: 1px solid var(--fundo-elevado); padding-top: 1.5rem; }
-    #painel-shopping.ativo { display: block; }
     #placar-shopping { color: var(--amarelo); font-weight: bold; margin-bottom: 1rem; }
     .grade-lojas { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.75rem; }
     .loja-card {
-      background: var(--fundo-elevado); border-radius: 6px; padding: 1rem;
-      border: 2px solid transparent;
+      border-radius: 14px; padding: 1rem;
+      border: 2px solid var(--vidro-borda);
     }
     .loja-card.escolhida-pelo-convidado { border-color: var(--azul); }
     .loja-card h3 { margin: 0 0 0.3rem; color: var(--amarelo); font-size: 1rem; }
@@ -57,7 +61,11 @@
     .loja-card button { font-size: 0.8rem; padding: 0.35rem 0.6rem; }
     .loja-card button.explodir { border-color: var(--fogo-vermelho); }
     .loja-card button.salvar { border-color: var(--azul); }
-    .loja-card .sem-foto { color: #888; font-size: 0.8rem; }
+    .loja-card .sem-foto { color: #aaa; font-size: 0.8rem; }
+
+    #painel-flop-ou-hit .card-lancamento { border-radius: 14px; padding: 1.2rem; margin-bottom: 1rem; }
+    #painel-flop-ou-hit img { max-width: 160px; border-radius: 10px; display: block; margin-bottom: 0.5rem; }
+    #painel-flop-ou-hit select { width: 100%; max-width: 420px; }
   </style>
 </head>
 <body>
@@ -86,7 +94,7 @@
 
   <div id="status"></div>
 
-  <div id="painel-shopping">
+  <div id="painel-shopping" class="painel cartao-vidro">
     <h2 class="titulo" style="font-size: 1.2rem;">Shopping</h2>
     <div id="placar-shopping">Placar: 0 explodiu · 0 salvou</div>
     <p style="color:#aaa; font-size:0.85rem;">O convidado vê as 6 lojas no palco e escolhe uma lá. A loja escolhida
@@ -94,7 +102,23 @@
     <div id="grade-lojas" class="grade-lojas"></div>
   </div>
 
-  <div id="painel-arquivo-gary">
+  <div id="painel-flop-ou-hit" class="painel cartao-vidro">
+    <h2 class="titulo" style="font-size: 1.2rem;">Flop ou Hit</h2>
+    <div class="campo">
+      <label for="seletor-lancamento">Lançamento (só aparecem os que têm histórico de chart real)</label>
+      <select id="seletor-lancamento"></select>
+      <button id="btn-mostrar-lancamento" style="margin-left: 0.5rem;">Mostrar no palco (sem número)</button>
+    </div>
+    <div id="card-lancamento-preview"></div>
+    <div class="campo" style="margin-top:1rem;">
+      <button id="btn-revelar-chart">Revelar dado real no palco</button>
+      <button id="btn-marcar-acertou">Marcou: Acertou</button>
+      <button id="btn-marcar-errou">Marcou: Errou</button>
+    </div>
+    <div id="placar-flop-ou-hit" style="color: var(--amarelo); font-weight: bold;">Placar: 0 acertou · 0 errou</div>
+  </div>
+
+  <div id="painel-arquivo-gary" class="painel cartao-vidro">
     <h2 class="titulo" style="font-size: 1.2rem;">Arquivo Gary</h2>
     <div class="campo">
       <label for="campo-convidado">Nome do artista (como está no jogo)</label>
@@ -111,6 +135,7 @@
     import { carregar } from './js/dados.js';
     import { montarDossie } from './js/quadros/arquivo-gary.js';
     import { montarCardLoja } from './js/quadros/shopping.js';
+    import { listarCandidatos, resumirChart } from './js/quadros/flop-ou-hit.js';
 
     const botao = document.getElementById('btn-enviar');
     const seletorQuadro = document.getElementById('seletor-quadro');
@@ -124,13 +149,25 @@
     const avisoDossie = document.getElementById('aviso-dossie');
     const listaPecas = document.getElementById('lista-pecas');
     const btnFecharArquivo = document.getElementById('btn-fechar-arquivo');
+    const painelFlopOuHit = document.getElementById('painel-flop-ou-hit');
+    const seletorLancamento = document.getElementById('seletor-lancamento');
+    const btnMostrarLancamento = document.getElementById('btn-mostrar-lancamento');
+    const cardLancamentoPreview = document.getElementById('card-lancamento-preview');
+    const btnRevelarChart = document.getElementById('btn-revelar-chart');
+    const btnMarcarAcertou = document.getElementById('btn-marcar-acertou');
+    const btnMarcarErrou = document.getElementById('btn-marcar-errou');
+    const placarFlopEl = document.getElementById('placar-flop-ou-hit');
 
-    // O painel do Arquivo Gary aparece assim que Gary escolhe o quadro no
-    // menu — não precisa esperar clicar em "Enviar para o palco" pra ver o
-    // campo de busca (o palco em si só muda quando o botão é clicado).
-    seletorQuadro.addEventListener('change', () => {
+    // O painel de cada quadro aparece assim que Gary escolhe ele no menu —
+    // não precisa esperar clicar em "Enviar para o palco" (o palco em si só
+    // muda quando o botão é clicado).
+    seletorQuadro.addEventListener('change', async () => {
       painelArquivoGary.classList.toggle('ativo', seletorQuadro.value === 'arquivo-gary');
       painelShopping.classList.toggle('ativo', seletorQuadro.value === 'shopping');
+      painelFlopOuHit.classList.toggle('ativo', seletorQuadro.value === 'flop-ou-hit');
+      if (seletorQuadro.value === 'flop-ou-hit') {
+        await montarPainelFlopOuHit();
+      }
     });
 
     botao.addEventListener('click', async () => {
@@ -189,7 +226,7 @@
 
         const card = montarCardLoja(nomeLoja, nomeArtista, dados);
         const el = document.createElement('div');
-        el.className = 'loja-card';
+        el.className = 'loja-card cartao-vidro';
         el.dataset.loja = nomeLoja;
 
         const fotoHtml = card.foto
@@ -251,7 +288,7 @@
 
       dossie.pecas.forEach((peca) => {
         const card = document.createElement('div');
-        card.className = 'peca-card';
+        card.className = 'peca-card cartao-vidro';
 
         if (!peca.disponivel) {
           card.innerHTML = `<h3>${peca.titulo}</h3><p class="indisponivel">Indisponível: ${peca.motivo}</p>`;
@@ -288,6 +325,75 @@
       listaPecas.innerHTML = '';
       avisoDossie.textContent = '';
       campoConvidado.value = '';
+    });
+
+    // --- Flop ou Hit ---
+    let candidatosFlop = [];
+    let placarFlop = { acertou: 0, errou: 0 };
+
+    function atualizarPlacarFlop() {
+      placarFlopEl.textContent = `Placar: ${placarFlop.acertou} acertou · ${placarFlop.errou} errou`;
+    }
+
+    async function montarPainelFlopOuHit() {
+      seletorLancamento.innerHTML = '<option>Carregando...</option>';
+      const dados = await carregarDadosCatalogo();
+      candidatosFlop = listarCandidatos(dados);
+
+      if (candidatosFlop.length === 0) {
+        seletorLancamento.innerHTML = '<option>Nenhum lançamento com histórico de chart real ainda</option>';
+        return;
+      }
+
+      seletorLancamento.innerHTML = candidatosFlop
+        .map(
+          (c, i) =>
+            `<option value="${i}">${c.musica.artist} — ${c.musica.title}</option>`,
+        )
+        .join('');
+    }
+
+    btnMostrarLancamento.addEventListener('click', () => {
+      const candidato = candidatosFlop[Number(seletorLancamento.value)];
+      if (!candidato) return;
+      const { musica } = candidato;
+
+      cardLancamentoPreview.innerHTML = `
+        <div class="card-lancamento cartao-vidro">
+          ${musica.coverUrl ? `<img src="${musica.coverUrl}" alt="${musica.title}" />` : ''}
+          <strong>${musica.artist}</strong> — ${musica.title}
+        </div>
+      `;
+
+      // Palco recebe só capa/título/artista, sem nenhum número.
+      enviar('flop-ou-hit:mostrar-lancamento', {
+        artista: musica.artist,
+        titulo: musica.title,
+        capa: musica.coverUrl || '',
+      });
+    });
+
+    btnRevelarChart.addEventListener('click', () => {
+      const candidato = candidatosFlop[Number(seletorLancamento.value)];
+      if (!candidato) return;
+      const resumo = resumirChart(candidato.entradas);
+      enviar('flop-ou-hit:revelar-chart', {
+        pico: resumo.pico,
+        maisRecente: resumo.maisRecente,
+        pais: resumo.pais,
+        plataforma: resumo.plataforma,
+      });
+    });
+
+    btnMarcarAcertou.addEventListener('click', () => {
+      placarFlop.acertou += 1;
+      atualizarPlacarFlop();
+      enviar('flop-ou-hit:resultado', { resultado: 'acertou' });
+    });
+    btnMarcarErrou.addEventListener('click', () => {
+      placarFlop.errou += 1;
+      atualizarPlacarFlop();
+      enviar('flop-ou-hit:resultado', { resultado: 'errou' });
     });
 
     aoReceber((mensagem) => {
