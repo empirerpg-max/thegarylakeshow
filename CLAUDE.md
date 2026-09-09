@@ -204,6 +204,24 @@ que o recorte em `dados/` ainda cobre o artista da vez) e atualizar
 `dados/chartsHistorico.json`/`dados/comentarios.json` manualmente — não é
 automático como o resto do catálogo.
 
+### `dados/musicas.json` e `dados/artistas.json`: também vieram do Drive, não da API
+
+A API pública (`empire-play/musicas`) continua bloqueada nesta rede. Em vez
+de esperar ela liberar, `dados/musicas.json` (76 faixas) e `dados/artistas.json`
+(33 nomes) foram extraídos **direto da planilha "principal" do jogo** via
+Google Drive, na aba "Musicas" — mesmo mecanismo usado pra `chartsHistorico.json`.
+Isso já é o suficiente para o Arquivo Gary funcionar de verdade com qualquer
+um desses 33 artistas (primeiro lançamento, maior hiato, e o esquecido —
+quando o artista tiver nota registrada). Faltam ainda: `dados/albuns.json`
+(a aba "Albuns" não coube nesta leitura, o arquivo é grande demais pra vir
+inteiro numa única consulta) e mais faixas se o catálogo real tiver mais de
+76 músicas (é bem provável que tenha — isso foi só o que veio nesta leitura).
+Quando a API pública for liberada, `sincronizar.mjs` deve voltar a ser a
+fonte principal (ela cobre o catálogo inteiro, isso aqui é um substituto
+manual e parcial). Até lá, se Gary pedir um artista que não está nesses 33
+nomes, é porque ele realmente não está neste recorte — não necessariamente
+porque não existe no jogo.
+
 ### Telas (implementado)
 
 - `controle.html`: ao escolher o quadro "Arquivo Gary", aparece um campo pra
