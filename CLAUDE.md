@@ -213,10 +213,14 @@ via Google Drive — mesmo mecanismo já usado pra `chartsHistorico.json`:
 
 - `musicas.json` — 76 faixas, da aba "Musicas".
 - `albuns.json` — 71 álbuns, da aba "Albuns".
-- `artistas.json` — 33 nomes, deduzidos dos artistas que aparecem em `musicas.json`
-  (ACT PRINCIPAL + feats). Sem foto ainda (campo `foto` vazio) — a foto de
-  verdade vive na aba ARTISTAS da planilha "usuarios"
-  (`1lFw9l76tYZYCDXhZsoiftIEzCvKcjCrI_oBpvUdwAlo`), ainda não lida.
+- `artistas.json` — **117 artistas com nome e foto real** (101 com foto
+  preenchida), da aba ARTISTAS na planilha "usuarios"/Gestão
+  (`1lFw9l76tYZYCDXhZsoiftIEzCvKcjCrI_oBpvUdwAlo`). Esse arquivo cobre bem
+  mais nomes do que `musicas.json`/`albuns.json` (117 vs. 33) — significa
+  que o Arquivo Gary reconhece mais artistas como "cadastrados" do que tem
+  lançamento para mostrar; a peça de foto do Shopping já pode usar esse
+  campo `foto` direto, sem precisar de reserva manual pra maioria dos
+  artistas.
 - `comentarios.json` — 21 títulos com pelo menos 1 comentário, de uma tabela
   de comentários encontrada na mesma leitura (85 linhas de comentário no
   total). **Limitação importante**: essa tabela só lista títulos que TÊM
