@@ -143,6 +143,13 @@ Quando Gary pedir uma pauta ou um roteiro:
    (trechos dos JSON) que sustentam cada peça do roteiro, para ele conferir.
 5. Seguir a estrutura de `roteiros/MODELO.md` e salvar o roteiro em
    `roteiros/[nome-do-convidado].md`.
+6. **Se o Arquivo Gary estiver entre os quadros do episódio**: rodar
+   mentalmente o mesmo levantamento de `montarDossie` (ou de fato rodar
+   `node scripts/dossie.mjs "Nome do Artista"`) e trazer as peças com seus
+   registros brutos antes de escrever qualquer parte do roteiro relativa a
+   esse quadro — nunca inventar posição de chart, data ou contagem de
+   comentário que não esteja em `dados/`. Se uma peça vier "indisponível",
+   dizer isso a Gary em vez de estimar ou aproximar o dado.
 
 ## Regras do site (palco/controle)
 
@@ -158,7 +165,60 @@ Quando Gary pedir uma pauta ou um roteiro:
 - Nunca usar texto pequeno no palco: o convidado pode estar assistindo pelo
   celular.
 
+## ARQUIVO GARY — motor de busca (implementado)
+
+`js/quadros/arquivo-gary.js` exporta `montarDossie(nomeArtista, dados)`, usado
+tanto pelo palco/controle quanto por `scripts/dossie.mjs` (mesma lógica nos
+dois lugares, sem duplicação). Recebe um objeto `dados` com as chaves:
+`musicas`, `albuns`, `musicVideos`, `artistas` (de `dados/*.json`, vindas do
+sync da API pública) e **duas chaves novas que a API pública não fornece**:
+
+- `chartsHistorico` — array de `{ posicao, pais, musica, plataforma, mes }`.
+  Vem da planilha real de charts (`chartsBase`, fora do escopo da API
+  pública) — só dá pra popular lendo a planilha diretamente via Google
+  Drive, não pelo `sincronizar.mjs`. Formato de exemplo real já salvo em
+  `dados/chartsHistorico.json` (26 registros do Paul Carter, extraídos à
+  mão desta planilha como prova de conceito).
+- `comentarios` — array de `{ artista, musica, contagemComentarios }`. Mesma
+  situação: vem de colunas de comentário dentro de `registrosCharts`, não da
+  API pública. **Ainda não populado** — nenhum arquivo `dados/comentarios.json`
+  existe ainda.
+
+Cada uma das 7 peças (primeiro lançamento, álbum mais antigo, maior hiato, o
+esquecido, pior colocação em chart, maior salto de posição, menos
+repercussão) verifica sozinha se tem o dado que precisa e devolve
+`disponivel: false` com um motivo claro em vez de quebrar ou inventar — rodar
+`node scripts/dossie.mjs "Nome"` com `dados/musicas.json` etc. ainda vazios
+(API pública bloqueada nesta rede) mostra isso na prática: as peças que
+dependem de `chartsHistorico` funcionam (porque esse arquivo tem dado real),
+as que dependem do catálogo básico avisam "indisponível" honestamente.
+
+### Pendência: como popular `chartsHistorico` e `comentarios` de verdade
+
+Essas duas fontes **não podem ser baixadas pelo `sincronizar.mjs`** (é um
+script Node puro, sem autenticação Google) — só uma sessão do Claude com
+acesso ao Google Drive de Gary consegue ler `chartsBase`/`registrosCharts`
+diretamente e gerar esses JSON. Na prática: sempre que Gary pedir uma pauta
+nova, antes de montar o roteiro, ler essas planilhas de novo (ou confirmar
+que o recorte em `dados/` ainda cobre o artista da vez) e atualizar
+`dados/chartsHistorico.json`/`dados/comentarios.json` manualmente — não é
+automático como o resto do catálogo.
+
+### Telas (implementado)
+
+- `controle.html`: ao escolher o quadro "Arquivo Gary", aparece um campo pra
+  digitar o nome do artista + botão "Buscar dossiê". As peças encontradas
+  aparecem com o dado **já visível pra Gary**, cada uma com botão "Puxar do
+  arquivo" (manda a peça pro palco) e "Ver registros brutos" (expande a lista
+  usada de prova, só no controle). Botão "Fechar o arquivo" volta o palco pro
+  logo.
+- `palco.html`: ao abrir o quadro, mostra só a capa (nome do convidado, sem
+  nenhuma peça). Cada clique em "Puxar do arquivo" manda o título da peça
+  primeiro (sem o dado), e o dado surge grande 1,2s depois automaticamente.
+  Nenhuma peça, dado ou registro fica no HTML antes do clique correspondente
+  — tudo chega via `sync.js` no momento exato.
+
 ## O que esta fundação NÃO fez (de propósito)
 
-Nenhuma lógica de quadro foi implementada. `js/quadros/` está vazia. Isso é
-trabalho de uma etapa futura.
+Os outros três quadros (Shopping, Flop ou Hit, Feat Forçado) ainda não têm
+lógica implementada — só o Arquivo Gary. Isso é trabalho de etapas futuras.

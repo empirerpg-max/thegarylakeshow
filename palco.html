@@ -24,11 +24,65 @@
     import { aoReceber } from './js/sync.js';
 
     const quadroAtual = document.getElementById('quadro-atual');
+    const logoPalco = quadroAtual.innerHTML;
+
+    function mostrarLogo() {
+      quadroAtual.innerHTML = logoPalco;
+    }
+
+    function mostrarCapaArquivoGary(convidado) {
+      quadroAtual.innerHTML = `
+        <div style="text-align:center;">
+          <div style="font-family: var(--fonte-titulo); text-transform: uppercase; letter-spacing: 0.1em; color: var(--amarelo); font-size: 1.2em;">
+            Arquivo confidencial
+          </div>
+          <div style="font-family: var(--fonte-titulo); text-transform: uppercase; color: var(--texto); font-size: 1.8em; margin-top: 0.3em;">
+            ${convidado}
+          </div>
+        </div>
+      `;
+    }
+
+    // Só o título da peça, sem o dado — aparece "sem aviso prévio" quando
+    // Gary clica "puxar do arquivo" no controle.
+    function mostrarTituloPeca(peca) {
+      quadroAtual.innerHTML = `
+        <div style="text-align:center;">
+          <div style="font-family: var(--fonte-titulo); text-transform: uppercase; letter-spacing: 0.05em; color: var(--azul); font-size: 1.6em;">
+            ${peca.titulo}
+          </div>
+        </div>
+      `;
+      // Depois de um instante, o dado surge grande — clique único do lado do
+      // controle já dispara isso, não precisa de segundo clique.
+      setTimeout(() => mostrarDadoPeca(peca), 1200);
+    }
+
+    function mostrarDadoPeca(peca) {
+      quadroAtual.innerHTML = `
+        <div style="text-align:center;">
+          <div style="font-family: var(--fonte-titulo); text-transform: uppercase; letter-spacing: 0.05em; color: var(--azul); font-size: 1.1em;">
+            ${peca.titulo}
+          </div>
+          <div style="font-family: var(--fonte-titulo); color: var(--rosa); font-size: 1.7em; margin-top: 0.4em;">
+            ${peca.dadoPrincipal}
+          </div>
+          <div style="color: var(--texto); font-size: 0.7em; margin-top: 0.6em; opacity: 0.85;">
+            ${peca.contextoSecundario || ''}
+          </div>
+        </div>
+      `;
+    }
 
     aoReceber((mensagem) => {
       console.log('palco recebeu:', mensagem);
-      // A lógica de cada quadro (js/quadros/*) vai escutar aqui e renderizar
-      // dentro de #quadro-atual. Por enquanto, esta fundação só recebe e loga.
+      if (mensagem.comando === 'mostrar-quadro' && !mensagem.dados?.quadro) {
+        mostrarLogo();
+      } else if (mensagem.comando === 'arquivo-gary:capa') {
+        mostrarCapaArquivoGary(mensagem.dados.convidado);
+      } else if (mensagem.comando === 'arquivo-gary:revelar-peca') {
+        mostrarTituloPeca(mensagem.dados.peca);
+      }
     });
   </script>
 </body>

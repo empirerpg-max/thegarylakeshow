@@ -21,6 +21,24 @@
     button { cursor: pointer; border-color: var(--azul); }
     button:hover { border-color: var(--rosa); }
     #status { color: var(--rosa); font-size: 0.9rem; margin-top: 2rem; }
+
+    /* Painel do Arquivo Gary */
+    #painel-arquivo-gary { display: none; margin-top: 2rem; border-top: 1px solid var(--fundo-elevado); padding-top: 1.5rem; }
+    #painel-arquivo-gary.ativo { display: block; }
+    #painel-arquivo-gary input[type="text"] {
+      background: var(--fundo-elevado); color: var(--texto); border: 1px solid var(--fundo-elevado);
+      padding: 0.6rem 1rem; font-size: 1rem; border-radius: 4px; width: 100%; max-width: 320px;
+    }
+    .peca-card {
+      background: var(--fundo-elevado); border-radius: 6px; padding: 1rem; margin-bottom: 0.75rem;
+    }
+    .peca-card h3 { margin: 0 0 0.4rem; color: var(--amarelo); font-size: 1rem; }
+    .peca-card .dado-principal { color: var(--rosa); font-weight: bold; margin: 0.3rem 0; }
+    .peca-card .indisponivel { color: #888; font-style: italic; }
+    .peca-card .registros { display: none; font-size: 0.85rem; color: #ccc; margin-top: 0.5rem; white-space: pre-wrap; }
+    .peca-card .registros.aberto { display: block; }
+    .peca-card .acoes { display: flex; gap: 0.5rem; margin-top: 0.5rem; }
+    .peca-card button { font-size: 0.85rem; padding: 0.4rem 0.8rem; }
   </style>
 </head>
 <body>
@@ -49,17 +67,116 @@
 
   <div id="status"></div>
 
+  <div id="painel-arquivo-gary">
+    <h2 class="titulo" style="font-size: 1.2rem;">Arquivo Gary</h2>
+    <div class="campo">
+      <label for="campo-convidado">Nome do artista (como está no jogo)</label>
+      <input type="text" id="campo-convidado" placeholder="Ex: Paul Carter" />
+      <button id="btn-buscar-dossie" style="margin-left: 0.5rem;">Buscar dossiê</button>
+    </div>
+    <div id="aviso-dossie" style="color: var(--rosa);"></div>
+    <div id="lista-pecas"></div>
+    <button id="btn-fechar-arquivo" style="margin-top: 1rem;">Fechar o arquivo (volta pro logo)</button>
+  </div>
+
   <script type="module">
     import { enviar, aoReceber } from './js/sync.js';
+    import { carregar } from './js/dados.js';
+    import { montarDossie } from './js/quadros/arquivo-gary.js';
 
     const botao = document.getElementById('btn-enviar');
     const seletorQuadro = document.getElementById('seletor-quadro');
     const status = document.getElementById('status');
+    const painelArquivoGary = document.getElementById('painel-arquivo-gary');
+    const campoConvidado = document.getElementById('campo-convidado');
+    const btnBuscarDossie = document.getElementById('btn-buscar-dossie');
+    const avisoDossie = document.getElementById('aviso-dossie');
+    const listaPecas = document.getElementById('lista-pecas');
+    const btnFecharArquivo = document.getElementById('btn-fechar-arquivo');
 
     botao.addEventListener('click', () => {
       const quadro = seletorQuadro.value;
       enviar('mostrar-quadro', { quadro });
       status.textContent = `Enviado: ${quadro || 'palco vazio'} — ${new Date().toLocaleTimeString('pt-BR')}`;
+      painelArquivoGary.classList.toggle('ativo', quadro === 'arquivo-gary');
+      if (quadro === 'arquivo-gary') {
+        enviar('arquivo-gary:capa', { convidado: campoConvidado.value || '???' });
+      }
+    });
+
+    async function carregarDadosCatalogo() {
+      const [musicas, albuns, musicVideos, artistas, chartsHistorico, comentarios] = await Promise.all([
+        carregar('musicas').catch(() => []),
+        carregar('albuns').catch(() => []),
+        carregar('musicVideos').catch(() => []),
+        carregar('artistas').catch(() => []),
+        carregar('chartsHistorico').catch(() => []),
+        carregar('comentarios').catch(() => []),
+      ]);
+      return { musicas, albuns, musicVideos, artistas, chartsHistorico, comentarios };
+    }
+
+    btnBuscarDossie.addEventListener('click', async () => {
+      const nomeArtista = campoConvidado.value.trim();
+      avisoDossie.textContent = '';
+      listaPecas.innerHTML = '';
+      if (!nomeArtista) {
+        avisoDossie.textContent = 'Digite o nome do artista primeiro.';
+        return;
+      }
+      avisoDossie.textContent = 'Buscando...';
+      const dados = await carregarDadosCatalogo();
+      const dossie = montarDossie(nomeArtista, dados);
+      avisoDossie.textContent = '';
+
+      if (!dossie.encontrado) {
+        avisoDossie.textContent = dossie.aviso;
+        return;
+      }
+
+      // Envia o nome do convidado pro palco montar a capa do dossiê — sem
+      // nenhuma peça ainda, só o nome (regra: nada de gabarito adiantado).
+      enviar('arquivo-gary:capa', { convidado: dossie.artista });
+
+      dossie.pecas.forEach((peca) => {
+        const card = document.createElement('div');
+        card.className = 'peca-card';
+
+        if (!peca.disponivel) {
+          card.innerHTML = `<h3>${peca.titulo}</h3><p class="indisponivel">Indisponível: ${peca.motivo}</p>`;
+          listaPecas.appendChild(card);
+          return;
+        }
+
+        card.innerHTML = `
+          <h3>${peca.titulo}</h3>
+          <p class="dado-principal">${peca.dadoPrincipal}</p>
+          <p>${peca.contextoSecundario || ''}</p>
+          <div class="acoes">
+            <button data-acao="puxar">Puxar do arquivo</button>
+            <button data-acao="registros">Ver registros brutos</button>
+          </div>
+          <pre class="registros">${peca.registrosBrutos.join('\n')}</pre>
+        `;
+
+        card.querySelector('[data-acao="puxar"]').addEventListener('click', () => {
+          enviar('arquivo-gary:revelar-peca', { peca });
+        });
+        card.querySelector('[data-acao="registros"]').addEventListener('click', (evento) => {
+          card.querySelector('.registros').classList.toggle('aberto');
+        });
+
+        listaPecas.appendChild(card);
+      });
+    });
+
+    btnFecharArquivo.addEventListener('click', () => {
+      enviar('mostrar-quadro', { quadro: '' });
+      seletorQuadro.value = '';
+      painelArquivoGary.classList.remove('ativo');
+      listaPecas.innerHTML = '';
+      avisoDossie.textContent = '';
+      campoConvidado.value = '';
     });
 
     aoReceber((mensagem) => {
