@@ -20,7 +20,9 @@
     "title": "Supermodel",
     "artist": "SA5M",
     "album": "SA5M - Supermodel",
-    "releaseDateIso": "2025-05-19"
+    "releaseDateIso": "2025-05-19",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Takin’ A Break",
@@ -31,19 +33,25 @@
     "title": "Soaked",
     "artist": "TED",
     "album": "Playlists Avulsas",
-    "releaseDateIso": "2024-06-26"
+    "releaseDateIso": "2024-06-26",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "I Don't Know Yet",
     "artist": "Anníbal Páris",
     "album": "Anníbal Páris - PATROL",
-    "releaseDateIso": "2024-12-13"
+    "releaseDateIso": "2024-12-13",
+    "genero": "RAP/HIP-HOP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "baddest of them all",
     "artist": "Alexxa Hills",
     "album": "Alexxa Hills - AH! The Concert (Live at Empire Festival 2024)",
-    "releaseDateIso": "2024-12-01"
+    "releaseDateIso": "2024-12-01",
+    "genero": "DANCE/ELECTRONIC",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Thanks For Coming",
@@ -59,31 +67,41 @@
     "title": "Dance Fever",
     "artist": "Rayna",
     "album": "Playlists Avulsas",
-    "releaseDateIso": "2024-12-13"
+    "releaseDateIso": "2024-12-13",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Teenage Rage",
     "artist": "Rayna",
     "album": "Rayna - WASTELAND",
-    "releaseDateIso": "2024-12-13"
+    "releaseDateIso": "2024-12-13",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "FOREVER US ð",
     "artist": "The Dutchess",
     "album": "Playlists Avulsas",
-    "releaseDateIso": "2024-12-13"
+    "releaseDateIso": "2024-12-13",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Meltdown",
     "artist": "Alexxa Hills",
     "album": "Alexxa Hills - villain (deluxe edition)",
-    "releaseDateIso": "2025-03-31"
+    "releaseDateIso": "2025-03-31",
+    "genero": "DANCE/ELECTRONIC",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "baddest of them all",
     "artist": "Alexxa Hills",
     "album": "Alexxa Hills - AH! The Concert (Live at Empire Festival 2024)",
-    "releaseDateIso": "2024-12-01"
+    "releaseDateIso": "2024-12-01",
+    "genero": "DANCE/ELECTRONIC",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Rare",
@@ -94,7 +112,9 @@
     "title": "girl of the year",
     "artist": "SA5M",
     "album": "SA5M - Supermodel",
-    "releaseDateIso": "2025-05-26"
+    "releaseDateIso": "2025-05-26",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "DUNGEON (feat. Raven)",
@@ -103,13 +123,17 @@
       "Raven"
     ],
     "album": "Matthew - Garden Echoes",
-    "releaseDateIso": "2024-12-13"
+    "releaseDateIso": "2024-12-13",
+    "genero": "POP",
+    "tipoMusica": "PARCERIA"
   },
   {
     "title": "Blaspheme",
     "artist": "Kyeh",
     "album": "Kyeh - KDLA",
-    "releaseDateIso": "2024-12-13"
+    "releaseDateIso": "2024-12-13",
+    "genero": "LATIN",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "baddest of them all remix with TED",
@@ -121,7 +145,9 @@
     "title": "new face",
     "artist": "SA5M",
     "album": "SA5M - bookers list",
-    "releaseDateIso": "2023-09-18"
+    "releaseDateIso": "2023-09-18",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Teenage Rage",
@@ -145,19 +171,25 @@
     "title": "Tired",
     "artist": "Dagny",
     "album": "Dagny - Rebel Idol",
-    "releaseDateIso": "2025-01-29"
+    "releaseDateIso": "2025-01-29",
+    "genero": "ALTERNATIVE/ROCK",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Paper Planes",
     "artist": "Adam Fountaine",
     "album": "Playlists Avulsas",
-    "releaseDateIso": "2025-01-29"
+    "releaseDateIso": "2025-01-29",
+    "genero": "R&B",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "7AM",
     "artist": "Mark",
     "album": "Mark - Nothing Extraordinary Happens in September",
-    "releaseDateIso": "2025-01-29"
+    "releaseDateIso": "2025-01-29",
+    "genero": "ALTERNATIVE/ROCK",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "level up!!!",
@@ -169,19 +201,25 @@
     "title": "Out of the Game",
     "artist": "Rayna",
     "album": "Rayna - rayna: the complete collection",
-    "releaseDateIso": "2025-02-07"
+    "releaseDateIso": "2025-02-07",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "KDLA",
     "artist": "Kyeh",
     "album": "Kyeh - KDLA",
-    "releaseDateIso": "2025-03-19"
+    "releaseDateIso": "2025-03-19",
+    "genero": "LATIN",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "anywhere",
     "artist": "Elettra",
     "album": "Playlists Avulsas",
-    "releaseDateIso": "2025-03-31"
+    "releaseDateIso": "2025-03-31",
+    "genero": "ALTERNATIVE/ROCK",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Serpentine Kiss",
@@ -194,43 +232,57 @@
       "SA5M"
     ],
     "album": "Anníbal Páris - PATROL",
-    "releaseDateIso": "2025-04-11"
+    "releaseDateIso": "2025-04-11",
+    "genero": "RAP/HIP-HOP",
+    "tipoMusica": "PARCERIA"
   },
   {
     "title": "villain",
     "artist": "Alexxa Hills",
     "album": "Alexxa Hills - villain",
-    "releaseDateIso": "2025-05-19"
+    "releaseDateIso": "2025-05-19",
+    "genero": "DANCE/ELECTRONIC",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "where it all started",
     "artist": "Paul Carter",
     "album": "Paul Carter - Evergreen (deluxe edition)",
-    "releaseDateIso": "2025-04-28"
+    "releaseDateIso": "2025-04-28",
+    "genero": "ALTERNATIVE/ROCK",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "EXTRATERRESTRE",
     "artist": "EVA",
     "album": "EVA - MERCURIO",
-    "releaseDateIso": "2023-06-08"
+    "releaseDateIso": "2023-06-08",
+    "genero": "LATIN",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Watch Me",
     "artist": "Angela",
     "album": "Angela - ANGELA",
-    "releaseDateIso": "2025-05-26"
+    "releaseDateIso": "2025-05-26",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Was It Worth It?",
     "artist": "Dagny",
     "album": "Dagny - Rebel Idol",
-    "releaseDateIso": "2025-05-26"
+    "releaseDateIso": "2025-05-26",
+    "genero": "ALTERNATIVE/ROCK",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Lady in Tears",
     "artist": "Rayna",
     "album": "Rayna - WASTELAND",
-    "releaseDateIso": "2025-05-30"
+    "releaseDateIso": "2025-05-30",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "KDLA",
@@ -243,25 +295,33 @@
     "title": "love castlevania",
     "artist": "Alexxa Hills",
     "album": "Alexxa Hills - villain (deluxe edition)",
-    "releaseDateIso": "2025-03-31"
+    "releaseDateIso": "2025-03-31",
+    "genero": "DANCE/ELECTRONIC",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "narcisistic (feat. KRØN)",
     "artist": "Anníbal Páris",
     "album": "Anníbal Páris - PATROL",
-    "releaseDateIso": "2025-06-09"
+    "releaseDateIso": "2025-06-09",
+    "genero": "RAP/HIP-HOP",
+    "tipoMusica": "PARCERIA"
   },
   {
     "title": "Drowned",
     "artist": "Matthew",
     "album": "Matthew - Garden Echoes",
-    "releaseDateIso": "2025-06-09"
+    "releaseDateIso": "2025-06-09",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Showstopper",
     "artist": "Rose Thompson",
     "album": "Rose Thompson - Gentleman Prefer Blondes",
-    "releaseDateIso": "2025-06-09"
+    "releaseDateIso": "2025-06-09",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Mind Maze feat. Rayna",
@@ -270,7 +330,9 @@
       "Rayna"
     ],
     "album": "TED - Solivagant: The Next Route",
-    "releaseDateIso": "2025-06-09"
+    "releaseDateIso": "2025-06-09",
+    "genero": "POP",
+    "tipoMusica": "PARCERIA"
   },
   {
     "title": "THE FAME (with Paul Carter)",
@@ -279,29 +341,39 @@
       "Paul Carter"
     ],
     "album": "Raven - Losing is the new Winning!",
-    "releaseDateIso": "2025-06-16"
+    "releaseDateIso": "2025-06-16",
+    "genero": "POP",
+    "tipoMusica": "DUETO"
   },
   {
     "title": "catnip",
     "artist": "Paul Carter",
     "album": "Paul Carter - Evergreen (deluxe edition)",
-    "releaseDateIso": "2025-06-16"
+    "releaseDateIso": "2025-06-16",
+    "genero": "ALTERNATIVE/ROCK",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "black canary",
     "artist": "Raven",
     "album": "Raven - 1997",
-    "releaseDateIso": "2025-06-16"
+    "releaseDateIso": "2025-06-16",
+    "genero": "ALTERNATIVE/ROCK",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Ego's Abdication",
     "artist": "Marco",
-    "releaseDateIso": "2025-06-09"
+    "releaseDateIso": "2025-06-09",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "GUILTY!",
     "artist": "Karol Morris",
-    "releaseDateIso": "2025-06-23"
+    "releaseDateIso": "2025-06-23",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Nitro",
@@ -310,37 +382,49 @@
       "Sabine"
     ],
     "album": "SA5M - Supermodel",
-    "releaseDateIso": "2025-06-23"
+    "releaseDateIso": "2025-06-23",
+    "genero": "POP",
+    "tipoMusica": "DUETO"
   },
   {
     "title": "H-A-R-E-M",
     "artist": "Kyeh",
     "album": "Kyeh - KDLA (Deluxe Edition)",
-    "releaseDateIso": "2025-06-23"
+    "releaseDateIso": "2025-06-23",
+    "genero": "LATIN",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Light Sky",
     "artist": "Yasmin",
     "album": "Yasmin - RECONSTRUCTION",
-    "releaseDateIso": "2025-06-23"
+    "releaseDateIso": "2025-06-23",
+    "genero": "R&B",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Americano",
     "artist": "Loreena",
     "album": "Loreena - LoReina",
-    "releaseDateIso": "2025-06-30"
+    "releaseDateIso": "2025-06-30",
+    "genero": "LATIN",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Masked",
     "artist": "Angela",
     "album": "Angela - ANGELA",
-    "releaseDateIso": "2025-06-23"
+    "releaseDateIso": "2025-06-23",
+    "genero": "DANCE/ELECTRONIC",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Cotton Candy Girl",
     "artist": "Rayna",
     "album": "Rayna - WASTELAND",
-    "releaseDateIso": "2025-06-30"
+    "releaseDateIso": "2025-06-30",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Breaking Frame",
@@ -358,7 +442,9 @@
     "title": "Hades",
     "artist": "OVERDRIVE",
     "album": "OVERDRIVE: The EP",
-    "releaseDateIso": "2025-07-07"
+    "releaseDateIso": "2025-07-07",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "hunger",
@@ -369,7 +455,9 @@
     "title": "magnum opus",
     "artist": "Marco",
     "album": "Marco - NeuroDance",
-    "releaseDateIso": "2025-07-14"
+    "releaseDateIso": "2025-07-14",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Breaking Frame (ft. Raven)",
@@ -381,7 +469,9 @@
     "title": "The Protagonist",
     "artist": "TED",
     "album": "TED - Solivagant: The Next Route",
-    "releaseDateIso": "2025-07-14"
+    "releaseDateIso": "2025-07-14",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "danny phantom RMX (feat. Nathan)",
@@ -390,19 +480,25 @@
       "Nathan"
     ],
     "album": "Raven - 1997",
-    "releaseDateIso": "2025-07-21"
+    "releaseDateIso": "2025-07-21",
+    "genero": "R&B",
+    "tipoMusica": "PARCERIA"
   },
   {
     "title": "Chasing Sunrises",
     "artist": "Anne Gray",
     "album": "Anne Gray - The Midnight Sweet Memories",
-    "releaseDateIso": "2025-07-21"
+    "releaseDateIso": "2025-07-21",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Bottled Rain",
     "artist": "Marco",
     "album": "Marco - NeuroDance",
-    "releaseDateIso": "2025-07-21"
+    "releaseDateIso": "2025-07-21",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Masked (feat. RED)",
@@ -420,7 +516,9 @@
     "featArtists": [
       "red"
     ],
-    "releaseDateIso": "2025-07-28"
+    "releaseDateIso": "2025-07-28",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Coming of age ceremony",
@@ -429,7 +527,9 @@
       "MOON GIRLS"
     ],
     "album": "SA5M - Supermodel",
-    "releaseDateIso": "2025-08-04"
+    "releaseDateIso": "2025-08-04",
+    "genero": "POP",
+    "tipoMusica": "PARCERIA"
   },
   {
     "title": "maybe next time feat. Marco",
@@ -438,7 +538,9 @@
       "Marco"
     ],
     "album": "Alexxa Hills - villain (deluxe edition)",
-    "releaseDateIso": "2025-07-21"
+    "releaseDateIso": "2025-07-21",
+    "genero": "DANCE/ELECTRONIC",
+    "tipoMusica": "PARCERIA"
   },
   {
     "title": "Airplane Mode (feat. Skorpion & Raven)",
@@ -448,7 +550,9 @@
       "Raven"
     ],
     "album": "Anníbal Páris - PATROL",
-    "releaseDateIso": "2025-07-28"
+    "releaseDateIso": "2025-07-28",
+    "genero": "RAP/HIP-HOP",
+    "tipoMusica": "PARCERIA"
   },
   {
     "title": "H-A-R-E-M-R-M-X",
@@ -457,7 +561,9 @@
       "EVA"
     ],
     "album": "Kyeh - KDLA (Deluxe Edition)",
-    "releaseDateIso": "2025-09-15"
+    "releaseDateIso": "2025-09-15",
+    "genero": "LATIN",
+    "tipoMusica": "PARCERIA"
   },
   {
     "title": "Uni-Duni-Tê",
@@ -475,7 +581,9 @@
     "title": "Casually Lost",
     "artist": "Dagny",
     "album": "Dagny - Rebel Idol",
-    "releaseDateIso": "2025-07-28"
+    "releaseDateIso": "2025-07-28",
+    "genero": "ALTERNATIVE/ROCK",
+    "tipoMusica": "SOLO"
   },
   {
     "title": "Holy Hollywoodia",
@@ -487,6 +595,8 @@
     "title": "Britannica",
     "artist": "Rose Thompson",
     "album": "Rose Thompson - Gentleman Prefer Blondes",
-    "releaseDateIso": "2025-08-04"
+    "releaseDateIso": "2025-08-04",
+    "genero": "POP",
+    "tipoMusica": "SOLO"
   }
 ]

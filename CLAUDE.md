@@ -267,7 +267,57 @@ recorte", não necessariamente "não existe no jogo".
   Nenhuma peça, dado ou registro fica no HTML antes do clique correspondente
   — tudo chega via `sync.js` no momento exato.
 
+## SHOPPING — implementado (com interação de mão dupla)
+
+Diferente do Arquivo Gary, o Shopping usa o `js/sync.js` nos **dois
+sentidos**: o controle manda o quê exibir, mas o **palco também manda
+mensagem de volta** quando o convidado clica numa loja — é o próprio
+convidado que interage com a tela, não Gary escolhendo por ele.
+
+- `js/quadros/shopping.js` exporta `gerarDicas` (3 dicas reais por artista,
+  construídas só com campos que existem em `dados/musicas.json` — gênero,
+  quantidade de lançamentos, ano de estreia, feat, melhor posição em chart
+  quando existir; nunca inventa dica pra completar 3 se não tiver material),
+  `resolverArtista` (nome + foto de `dados/artistas.json`) e `montarCardLoja`
+  (junta os dois).
+- `controle.html`: ao escolher "Shopping", mostra as 6 lojas com o nome do
+  artista **visível só pra Gary**, as dicas geradas, botão "Revelar foto no
+  palco", e botões "Explodiu"/"Salvou" que atualizam um placar da sessão.
+  Também escuta o palco: quando o convidado clica numa loja lá, o card
+  correspondente aqui fica com borda azul.
+- `palco.html`: mostra as 6 lojas **só pelo nome**, sem nenhum artista
+  associado no HTML. O convidado clica numa — o clique dispara
+  `enviar('shopping:loja-escolhida', ...)` do próprio palco de volta pro
+  controle. Quando Gary revela a foto ou marca o resultado, o palco atualiza
+  em tempo real (foto grande, depois "EXPLODIU" em fogo laranja/vermelho ou
+  "SALVOU" em azul).
+- **Sem foto cadastrada**: nem todo artista de `dados/programa/Shopping.json`
+  tem `foto` em `dados/artistas.json` (ex.: Poxxie Freitas, na aba Shopping
+  atual). O card do controle avisa isso explicitamente em vez de mostrar
+  campo vazio sem explicação — a coluna "Foto (reserva)" da planilha existe
+  exatamente pra esse caso, mas ainda não foi preenchida.
+- **Imagens de loja**: por ora, os cards (tanto controle quanto palco) usam
+  só o nome da loja em tipografia grande — não usei logo oficial de marca
+  (Gucci, Apple Store etc.) pra evitar depender de assets de terceiros sem
+  licença. Se Gary quiser logos de verdade, ele precisa fornecer os arquivos
+  de imagem (ou confirmar que pode usar o logo oficial) — Claude não gera
+  nem baixa logo de marca por conta própria.
+
+## Verificação de nota Metacritic (checado a fundo)
+
+Antes de reportar "indisponível" nessa peça, Claude já verificou o campo
+"Média Metacritic" em **5 planilhas diferentes** (Musicas e Albuns da
+planilha principal, `chartsBase`, ARTISTAS da planilha de Gestão, e
+`saidosCharts`) — buscando literalmente a palavra "Metacritic" em cada uma.
+Resultado: aparece só nos cabeçalhos de coluna, nunca com um número
+preenchido do lado, em nenhuma das ~148 linhas de música/álbum lidas até
+agora. Se existir nota de verdade em algum lugar, é numa fonte que Claude
+ainda não tem o ID/link — pedir a Gary o nome de uma música com nota
+conhecida pra localizar a fonte certa antes de insistir que "não existe".
+
 ## O que esta fundação NÃO fez (de propósito)
 
-Os outros três quadros (Shopping, Flop ou Hit, Feat Forçado) ainda não têm
-lógica implementada — só o Arquivo Gary. Isso é trabalho de etapas futuras.
+Flop ou Hit e Feat Forçado ainda não têm interação implementada no
+palco/controle (só o roteiro manual de cada um foi montado até agora,
+ver `roteiros/Alexxa-Hills.md`). Arquivo Gary e Shopping já funcionam de
+ponta a ponta.

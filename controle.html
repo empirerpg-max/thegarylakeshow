@@ -39,6 +39,25 @@
     .peca-card .registros.aberto { display: block; }
     .peca-card .acoes { display: flex; gap: 0.5rem; margin-top: 0.5rem; }
     .peca-card button { font-size: 0.85rem; padding: 0.4rem 0.8rem; }
+
+    /* Painel do Shopping */
+    #painel-shopping { display: none; margin-top: 2rem; border-top: 1px solid var(--fundo-elevado); padding-top: 1.5rem; }
+    #painel-shopping.ativo { display: block; }
+    #placar-shopping { color: var(--amarelo); font-weight: bold; margin-bottom: 1rem; }
+    .grade-lojas { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.75rem; }
+    .loja-card {
+      background: var(--fundo-elevado); border-radius: 6px; padding: 1rem;
+      border: 2px solid transparent;
+    }
+    .loja-card.escolhida-pelo-convidado { border-color: var(--azul); }
+    .loja-card h3 { margin: 0 0 0.3rem; color: var(--amarelo); font-size: 1rem; }
+    .loja-card .artista-nome { color: var(--rosa); font-weight: bold; margin-bottom: 0.4rem; }
+    .loja-card ul { margin: 0.4rem 0; padding-left: 1.1rem; font-size: 0.85rem; color: #ddd; }
+    .loja-card .acoes-loja { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+    .loja-card button { font-size: 0.8rem; padding: 0.35rem 0.6rem; }
+    .loja-card button.explodir { border-color: var(--fogo-vermelho); }
+    .loja-card button.salvar { border-color: var(--azul); }
+    .loja-card .sem-foto { color: #888; font-size: 0.8rem; }
   </style>
 </head>
 <body>
@@ -67,6 +86,14 @@
 
   <div id="status"></div>
 
+  <div id="painel-shopping">
+    <h2 class="titulo" style="font-size: 1.2rem;">Shopping</h2>
+    <div id="placar-shopping">Placar: 0 explodiu · 0 salvou</div>
+    <p style="color:#aaa; font-size:0.85rem;">O convidado vê as 6 lojas no palco e escolhe uma lá. A loja escolhida
+    fica destacada em azul aqui. Confira as dicas, revele a foto quando quiser, e marque o resultado.</p>
+    <div id="grade-lojas" class="grade-lojas"></div>
+  </div>
+
   <div id="painel-arquivo-gary">
     <h2 class="titulo" style="font-size: 1.2rem;">Arquivo Gary</h2>
     <div class="campo">
@@ -83,11 +110,15 @@
     import { enviar, aoReceber } from './js/sync.js';
     import { carregar } from './js/dados.js';
     import { montarDossie } from './js/quadros/arquivo-gary.js';
+    import { montarCardLoja } from './js/quadros/shopping.js';
 
     const botao = document.getElementById('btn-enviar');
     const seletorQuadro = document.getElementById('seletor-quadro');
     const status = document.getElementById('status');
     const painelArquivoGary = document.getElementById('painel-arquivo-gary');
+    const painelShopping = document.getElementById('painel-shopping');
+    const grade = document.getElementById('grade-lojas');
+    const placarEl = document.getElementById('placar-shopping');
     const campoConvidado = document.getElementById('campo-convidado');
     const btnBuscarDossie = document.getElementById('btn-buscar-dossie');
     const avisoDossie = document.getElementById('aviso-dossie');
@@ -99,14 +130,18 @@
     // campo de busca (o palco em si só muda quando o botão é clicado).
     seletorQuadro.addEventListener('change', () => {
       painelArquivoGary.classList.toggle('ativo', seletorQuadro.value === 'arquivo-gary');
+      painelShopping.classList.toggle('ativo', seletorQuadro.value === 'shopping');
     });
 
-    botao.addEventListener('click', () => {
+    botao.addEventListener('click', async () => {
       const quadro = seletorQuadro.value;
       enviar('mostrar-quadro', { quadro });
       status.textContent = `Enviado: ${quadro || 'palco vazio'} — ${new Date().toLocaleTimeString('pt-BR')}`;
       if (quadro === 'arquivo-gary') {
         enviar('arquivo-gary:capa', { convidado: campoConvidado.value || '???' });
+      }
+      if (quadro === 'shopping') {
+        await montarPainelShopping();
       }
     });
 
@@ -120,6 +155,72 @@
         carregar('comentarios').catch(() => []),
       ]);
       return { musicas, albuns, musicVideos, artistas, chartsHistorico, comentarios };
+    }
+
+    // --- Shopping ---
+    let placar = { explodiu: 0, salvou: 0 };
+
+    function atualizarPlacar() {
+      placarEl.textContent = `Placar: ${placar.explodiu} explodiu · ${placar.salvou} salvou`;
+    }
+
+    async function montarPainelShopping() {
+      grade.innerHTML = '<p>Carregando lojas...</p>';
+      const [lojas, dados] = await Promise.all([
+        carregar('programa/Shopping').catch(() => []),
+        carregarDadosCatalogo(),
+      ]);
+      grade.innerHTML = '';
+
+      // Manda pro palco só os NOMES das lojas, sem artista nenhum — o
+      // convidado escolhe visualmente, sem saber quem está escondido ali.
+      enviar('shopping:mostrar-lojas', {
+        lojas: lojas.map((l) => l['Loja']).filter(Boolean),
+      });
+
+      lojas.forEach((linha) => {
+        const nomeLoja = linha['Loja'];
+        const nomeArtista = linha['Artista'];
+        if (!nomeLoja || !nomeArtista) return;
+
+        const card = montarCardLoja(nomeLoja, nomeArtista, dados);
+        const el = document.createElement('div');
+        el.className = 'loja-card';
+        el.dataset.loja = nomeLoja;
+
+        const fotoHtml = card.foto
+          ? `<img src="${card.foto}" alt="${card.artista}" style="max-width:100%; border-radius:4px; margin-top:0.4rem;" />`
+          : `<p class="sem-foto">Sem foto cadastrada — precisa da coluna "Foto (reserva)" preenchida na planilha.</p>`;
+
+        el.innerHTML = `
+          <h3>${nomeLoja}</h3>
+          <div class="artista-nome">${card.artista}</div>
+          <ul>${card.dicas.map((d) => `<li>${d}</li>`).join('') || '<li>(sem dica real disponível pra este artista)</li>'}</ul>
+          <div class="acoes-loja">
+            <button data-acao="revelar">Revelar foto no palco</button>
+            <button data-acao="explodir" class="explodir">Explodiu</button>
+            <button data-acao="salvar" class="salvar">Salvou</button>
+          </div>
+          <div class="foto-preview"></div>
+        `;
+
+        el.querySelector('[data-acao="revelar"]').addEventListener('click', () => {
+          enviar('shopping:revelar-foto', { loja: nomeLoja, artista: card.artista, foto: card.foto });
+          el.querySelector('.foto-preview').innerHTML = fotoHtml;
+        });
+        el.querySelector('[data-acao="explodir"]').addEventListener('click', () => {
+          placar.explodiu += 1;
+          atualizarPlacar();
+          enviar('shopping:resultado', { loja: nomeLoja, resultado: 'explodiu' });
+        });
+        el.querySelector('[data-acao="salvar"]').addEventListener('click', () => {
+          placar.salvou += 1;
+          atualizarPlacar();
+          enviar('shopping:resultado', { loja: nomeLoja, resultado: 'salvou' });
+        });
+
+        grade.appendChild(el);
+      });
     }
 
     btnBuscarDossie.addEventListener('click', async () => {
@@ -186,7 +287,12 @@
     });
 
     aoReceber((mensagem) => {
-      console.log('controle recebeu (eco):', mensagem);
+      console.log('controle recebeu:', mensagem);
+      if (mensagem.comando === 'shopping:loja-escolhida') {
+        document.querySelectorAll('.loja-card').forEach((el) => {
+          el.classList.toggle('escolhida-pelo-convidado', el.dataset.loja === mensagem.dados.loja);
+        });
+      }
     });
   </script>
 </body>
