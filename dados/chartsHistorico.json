@@ -199015,5 +199015,853 @@
     "musica": "Marco - Home",
     "plataforma": "Spotify",
     "mes": "Agosto"
+  },
+  {
+    "posicao": 1,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Louise - Sober",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 2,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Samantha Cooper - 7feets (feat. Paul Carter)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 3,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Louise - BDSM (feat. Sabine & Destiny)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 4,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Denver - Placebo",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 5,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Brandy - Ringtone",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 6,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Helenna - should i?",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 7,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Anníbal Páris - Freak Out (feat. Sabine)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 8,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Paul Carter - Cherubim",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 9,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Raphael Sparrow - Control (feat. Raven, BREMM & El Coyotte)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 10,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Kendall - Obsessed Bitch",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 11,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Samantha Cooper - please, accept me",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 12,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Harriet - Intensive",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 13,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Anníbal Páris - Lucifer",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 14,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "PussyOnFire! - Complexx",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 15,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Yasmin - I Love It (feat. Sabine)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 16,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Anna Persson - I Don't Do This For You (from Eurovision 2020)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 17,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Daniela Rubens - Pain (feat. Nineoff)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 18,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Brandy - Black Empire (feat. Sabine, Kendall & Louise)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 19,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Raven - Mirage",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 20,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Steele - Natuur",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 21,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Harriet - Nostalgia",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 22,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Marco - Best Movements",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 23,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Raphael Sparrow - Deception",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 24,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Elettra - The Promise",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 25,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Helenna - life, truth, control",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 26,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Melissa - The Best of Me",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 27,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Destiny - Rewrite the Stars",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 28,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "PussyOnFire! - Return",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 29,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Luna - Farsa (from Eurovision 2020)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 30,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Karol Morris - Exile Me",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 31,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Paul Carter - Praying",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 32,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Samantha Cooper - love with the devil",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 33,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Madison - Good For You",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 34,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "TED - body.",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 35,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Marco - In My Arms",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 36,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "TED - paradise.",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 37,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Samantha Cooper - god bless",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 38,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Sabine - Nightmare Woman",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 39,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Louise - Ziriguidum (feat. Steele)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 40,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Emma - Illegal",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 41,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Otilia - Miss Me",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 42,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "RED - Feel the Moment (feat. Harriet & Helenna)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 43,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Raven - Check-out (feat. Sabine)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 44,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Elettra - Something to Say (from Eurovision 2020)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 45,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Raven - Body Language (feat. Destiny)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 46,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Anníbal Páris - Ain't No Jesus",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 47,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "BREMM - Adrenalina (feat. Raven)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 48,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Otilia - Artificial (from Eurovision 2020)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 49,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Paul Carter - Styx & Stones (feat. Kyeh)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 50,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "The Dutchess - Rhythm",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 51,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Clara Kant - Fake Acclaim",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 52,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Marco - Fragile",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 53,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Samantha Cooper - worn wings",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 54,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Clara Kant - I'm Not Going Anywhere",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 55,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Marco - Bright Side",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 56,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "TED - drunked.",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 57,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Raven - The Hollow",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 58,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Harriet - So Insane",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 59,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Samantha Cooper - emancipation",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 60,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Samantha Cooper - selfhunter",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 61,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Louise - Eternal Metamorphosis",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 62,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Samantha Cooper - stop thinking it's a phase",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 63,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Samantha Cooper - forgiveness song",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 64,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Samantha Cooper - allow to eco (feat. Clara Kant)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 65,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Samantha Cooper - burn in hell",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 66,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Samantha Cooper - letter to mom and dad",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 67,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Samantha Cooper - clergy (interlude)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 68,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Samantha Cooper - persephone",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 69,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Samantha Cooper - sane",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 70,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Samantha Cooper - grave (feat. Paul Carter)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 71,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Jessica Johnson - Psychos In Love",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 72,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Kyeh - Humans",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 73,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Raphael Sparrow - Option",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 74,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Raphael Sparrow - Permission",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 75,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Raphael Sparrow - Omission",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 76,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Raphael Sparrow - Illusion",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 77,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Aimê - Forbidden Love (from Eurovision 2020)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 78,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "PussyOnFire! - Fight Me",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 79,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Anníbal Páris - Old Times",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 80,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Louise - Don't Kill My Vibe (feat. Matthew)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 81,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Raven - Check-In",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 82,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Dagny - Soulmate (from Eurovision 2020)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 83,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Louise - Should I?",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 84,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Paul Carter - Lost Eden (feat. Denver)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 85,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Louise - Indecency",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 86,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Louise - Lose Control (feat. David R)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 87,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Louise - Won't Let You Go",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 88,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Louise - No Time To Waste",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 89,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Paul Carter - Call Me Daddy",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 90,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Paul Carter - Bad News",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 91,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Paul Carter - Mirrors",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 92,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Paul Carter - Easier",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 93,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Paul Carter - Relover",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 94,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Paul Carter - Summer Time",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 95,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Paul Carter - Morningstar",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 96,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Paul Carter - Circles (feat. TED)",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 97,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "The Dutchess - London Town",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 98,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "The Dutchess - Not That Kinda Girl",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 99,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "The Dutchess - Falling In Love",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 100,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "The Dutchess - Like First Time",
+    "plataforma": "Billboard",
+    "mes": "Maio",
+    "dataCompleta": "25/05/2020"
+  },
+  {
+    "posicao": 1,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Samantha Cooper - 7feets (feat. Paul Carter)",
+    "plataforma": "Billboard",
+    "mes": "Junho",
+    "dataCompleta": "01/06/2020"
+  },
+  {
+    "posicao": 2,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Paul Carter - Cherubim",
+    "plataforma": "Billboard",
+    "mes": "Junho",
+    "dataCompleta": "01/06/2020"
+  },
+  {
+    "posicao": 3,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Raven - Mirage",
+    "plataforma": "Billboard",
+    "mes": "Junho",
+    "dataCompleta": "01/06/2020"
+  },
+  {
+    "posicao": 4,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Denver - Placebo",
+    "plataforma": "Billboard",
+    "mes": "Junho",
+    "dataCompleta": "01/06/2020"
+  },
+  {
+    "posicao": 5,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Louise - Sober",
+    "plataforma": "Billboard",
+    "mes": "Junho",
+    "dataCompleta": "01/06/2020"
+  },
+  {
+    "posicao": 6,
+    "pais": "BILLBOARD HOT 100",
+    "musica": "Samantha Cooper - please, accept me",
+    "plataforma": "Billboard",
+    "mes": "Junho",
+    "dataCompleta": "01/06/2020"
   }
 ]

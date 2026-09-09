@@ -1,10 +1,19 @@
 [
   {
+    "artist": "Abigail",
+    "title": "How to Fuck Things Up",
+    "releaseDateIso": "2022-04-12",
+    "semanasNoChart": 148,
+    "genero": "R&B",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=16gNolyLw_YSGlGiGSgScEeS-v12qrbkH"
+  },
+  {
     "title": "Christmas Again",
     "artist": "Abigail",
     "releaseDateIso": "2025-12-15",
     "genero": "R&B",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=16gNolyLw_YSGlGiGSgScEeS-v12qrbkH"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=16gNolyLw_YSGlGiGSgScEeS-v12qrbkH",
+    "semanasNoChart": 36
   },
   {
     "title": "Trio Enfurecido",
@@ -21,12 +30,21 @@
     "artist": "Alexxa Hills",
     "releaseDateIso": "2025-01-06",
     "genero": "DANCE/ELECTRONIC",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1_K_XsaNh3cLbi4Qm_4OCStyzQAjGOIu6"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1_K_XsaNh3cLbi4Qm_4OCStyzQAjGOIu6",
+    "semanasNoChart": 77
   },
   {
     "title": "villain",
     "artist": "Alexxa Hills",
     "releaseDateIso": "2025-03-31",
+    "genero": "DANCE/ELECTRONIC",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1_K_XsaNh3cLbi4Qm_4OCStyzQAjGOIu6"
+  },
+  {
+    "artist": "Alexxa Hills",
+    "title": "villain (deluxe edition)",
+    "releaseDateIso": "2025-03-31",
+    "semanasNoChart": 46,
     "genero": "DANCE/ELECTRONIC",
     "coverUrl": "https://drive.google.com/uc?export=view&id=1_K_XsaNh3cLbi4Qm_4OCStyzQAjGOIu6"
   },
@@ -47,18 +65,46 @@
     "artist": "Angela",
     "releaseDateIso": "2025-07-28",
     "genero": "POP",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1SvqQ9V5e_OTWNc9ryYXpcaqqkC00b6lT"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1SvqQ9V5e_OTWNc9ryYXpcaqqkC00b6lT",
+    "semanasNoChart": 56
   },
   {
     "title": "The Midnight Sweet Memories",
-    "artist": "Anne Gray"
+    "artist": "Anne Gray",
+    "semanasNoChart": 103,
+    "genero": "POP"
+  },
+  {
+    "artist": "Anne Gray",
+    "title": "Sweet Memories",
+    "releaseDateIso": "2023-02-08",
+    "semanasNoChart": 116,
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1QusRNxET8d5BL0mou4ma83OeW55hisRk"
+  },
+  {
+    "artist": "Anníbal Páris",
+    "title": "The New DiSoRdEr",
+    "releaseDateIso": "2022-11-09",
+    "semanasNoChart": 120,
+    "genero": "RAP/HIP-HOP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1cp5lWZcpDPIYsPuv8bwY_tQApx2xgm2B"
   },
   {
     "title": "PATROL",
     "artist": "Anníbal Páris",
     "releaseDateIso": "2025-06-30",
     "genero": "RAP/HIP-HOP",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1cp5lWZcpDPIYsPuv8bwY_tQApx2xgm2B"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1cp5lWZcpDPIYsPuv8bwY_tQApx2xgm2B",
+    "semanasNoChart": 56
+  },
+  {
+    "artist": "Brandy",
+    "title": "BRANDY",
+    "releaseDateIso": "2022-09-14",
+    "semanasNoChart": 128,
+    "genero": "R&B",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=14TiX4R5_m9R8SZXWEp6U_AjS5lKKRexJ"
   },
   {
     "title": "Digital Eden",
@@ -80,12 +126,21 @@
     "artist": "Dagny",
     "releaseDateIso": "2025-03-31",
     "genero": "POP",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=16sRjsXORGZJ5_71NmLxwtAdb8ApfVHfY"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=16sRjsXORGZJ5_71NmLxwtAdb8ApfVHfY",
+    "semanasNoChart": 73
   },
   {
     "title": "Coming Out",
     "artist": "Denver",
     "releaseDateIso": "2020-02-24"
+  },
+  {
+    "artist": "El Coyotte",
+    "title": "PASSPORT",
+    "releaseDateIso": "2023-10-25",
+    "semanasNoChart": 85,
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1kxQS8fTKx6g0hm2Co2WHjY-UoeHpH2zY"
   },
   {
     "title": "Pioneer of Broken Heart EP",
@@ -98,7 +153,17 @@
   },
   {
     "title": "MERCURIO",
-    "artist": "EVA"
+    "artist": "EVA",
+    "semanasNoChart": 104,
+    "genero": "LATIN"
+  },
+  {
+    "artist": "EVA",
+    "title": "Fruto Proibido (EP)",
+    "releaseDateIso": "2023-04-05",
+    "semanasNoChart": 110,
+    "genero": "LATIN",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1-8WrP2Czz_xqksvu4I8U1au0drg60mVS"
   },
   {
     "title": "HollyWouldn’t",
@@ -110,7 +175,16 @@
     "artist": "EVA",
     "releaseDateIso": "2025-10-27",
     "genero": "LATIN",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1-8WrP2Czz_xqksvu4I8U1au0drg60mVS"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1-8WrP2Czz_xqksvu4I8U1au0drg60mVS",
+    "semanasNoChart": 43
+  },
+  {
+    "artist": "Hector",
+    "title": "HOME/CHURCH",
+    "releaseDateIso": "2022-10-12",
+    "semanasNoChart": 124,
+    "genero": "LATIN",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1rsFbnMs39tpH2TXLbrpFF1a6RhrbCda1"
   },
   {
     "title": "exposed.",
@@ -128,11 +202,31 @@
   },
   {
     "title": "Pink Flamingo Shit",
-    "artist": "KIM"
+    "artist": "KIM",
+    "semanasNoChart": 102,
+    "genero": "DANCE/ELECTRONIC"
   },
   {
     "title": "In My Defense",
-    "artist": "KYEH"
+    "artist": "KYEH",
+    "semanasNoChart": 100,
+    "genero": "LATIN"
+  },
+  {
+    "artist": "Kyeh",
+    "title": "Impefect Angel (10th Anniversary)",
+    "releaseDateIso": "2021-12-06",
+    "semanasNoChart": 166,
+    "genero": "LATIN",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1ljvgIhxRT8qcj6iLw3pxdX809Ss1E5_8"
+  },
+  {
+    "artist": "Kyeh",
+    "title": "KABARET: Madame K",
+    "releaseDateIso": "2022-07-20",
+    "semanasNoChart": 136,
+    "genero": "LATIN",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1ljvgIhxRT8qcj6iLw3pxdX809Ss1E5_8"
   },
   {
     "title": "KDLA (Full Album)",
@@ -151,7 +245,8 @@
     "artist": "Kyeh",
     "releaseDateIso": "2025-09-14",
     "genero": "LATIN",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1ljvgIhxRT8qcj6iLw3pxdX809Ss1E5_8"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1ljvgIhxRT8qcj6iLw3pxdX809Ss1E5_8",
+    "semanasNoChart": 49
   },
   {
     "title": "LoReina",
@@ -163,7 +258,8 @@
     "artist": "Loreena",
     "releaseDateIso": "2026-02-09",
     "genero": "LATIN",
-    "coverUrl": "https://drive.google.com/file/d/1V7fLleAg5jKr64d124X5iX8ZjIjz-H0S/view?usp=sharing"
+    "coverUrl": "https://drive.google.com/file/d/1V7fLleAg5jKr64d124X5iX8ZjIjz-H0S/view?usp=sharing",
+    "semanasNoChart": 28
   },
   {
     "title": "Golden Times",
@@ -174,6 +270,30 @@
     "title": "FREE YOURSELF",
     "artist": "Luke",
     "releaseDateIso": "2021-07-26"
+  },
+  {
+    "artist": "Luke",
+    "title": "CADABRA",
+    "releaseDateIso": "2022-05-30",
+    "semanasNoChart": 142,
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1eW_ITJ1a4NPufevCmKzm2iPWEvNDATY9"
+  },
+  {
+    "artist": "Madeline",
+    "title": "I Only Smile When I'm High",
+    "releaseDateIso": "2022-05-16",
+    "semanasNoChart": 144,
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1AcpLA4tlux2hBeHv5-xmSTNupeseCfA_"
+  },
+  {
+    "artist": "Madeline",
+    "title": "Madeline",
+    "releaseDateIso": "2022-05-23",
+    "semanasNoChart": 143,
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1AcpLA4tlux2hBeHv5-xmSTNupeseCfA_"
   },
   {
     "title": "Rise Up!",
@@ -190,18 +310,22 @@
     "artist": "Marco",
     "releaseDateIso": "2026-01-26",
     "genero": "POP",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1_FycvMPqjDDfVx-BqLTj_Ygto9GVpYVy"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1_FycvMPqjDDfVx-BqLTj_Ygto9GVpYVy",
+    "semanasNoChart": 30
   },
   {
     "title": "Nothing Extraordinary Happens in September",
-    "artist": "Mark"
+    "artist": "Mark",
+    "semanasNoChart": 114,
+    "genero": "ALTERNATIVE/ROCK"
   },
   {
     "title": "Garden Echoes",
     "artist": "Matthew",
     "releaseDateIso": "2025-04-28",
     "genero": "POP",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1NcVF2o-TtS6N3We_8ttFaCm1dkppVfZd"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1NcVF2o-TtS6N3We_8ttFaCm1dkppVfZd",
+    "semanasNoChart": 70
   },
   {
     "title": "All Italian",
@@ -209,13 +333,24 @@
     "releaseDateIso": "2024-11-01"
   },
   {
+    "artist": "MOON GIRLS",
+    "title": "TIME MACHINE",
+    "releaseDateIso": "2022-11-09",
+    "semanasNoChart": 120,
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1k_X0cvaYDS3xy8hlmlx-fwoTZckLdlil"
+  },
+  {
     "title": "The N World",
-    "artist": "Nathan"
+    "artist": "Nathan",
+    "semanasNoChart": 109,
+    "genero": "RAP/HIP-HOP"
   },
   {
     "title": "OVERDRIVE: The EP",
     "artist": "OVERDRIVE",
-    "releaseDateIso": "2025-08-18"
+    "releaseDateIso": "2025-08-18",
+    "semanasNoChart": 53
   },
   {
     "title": "The First EP",
@@ -233,6 +368,22 @@
     "releaseDateIso": "2021-07-12"
   },
   {
+    "artist": "Paul Carter",
+    "title": "TAROT",
+    "releaseDateIso": "2022-02-07",
+    "semanasNoChart": 157,
+    "genero": "ALTERNATIVE/ROCK",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1lT03s3G4nCgnWk0FIu5t_4D698FGuiik"
+  },
+  {
+    "artist": "Paul Carter",
+    "title": "TAROT: Minor Arcana (EP)",
+    "releaseDateIso": "2022-07-27",
+    "semanasNoChart": 135,
+    "genero": "ALTERNATIVE/ROCK",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1lT03s3G4nCgnWk0FIu5t_4D698FGuiik"
+  },
+  {
     "title": "Evergreen",
     "artist": "Paul Carter",
     "releaseDateIso": "2025-04-28",
@@ -244,7 +395,8 @@
     "artist": "Paul Carter",
     "releaseDateIso": "2025-08-11",
     "genero": "ALTERNATIVE/ROCK",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1lT03s3G4nCgnWk0FIu5t_4D698FGuiik"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1lT03s3G4nCgnWk0FIu5t_4D698FGuiik",
+    "semanasNoChart": 54
   },
   {
     "title": "Evergreen (Deluxe)",
@@ -261,7 +413,8 @@
     "artist": "Paul Carter",
     "releaseDateIso": "2025-12-15",
     "genero": "ALTERNATIVE/ROCK",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1lT03s3G4nCgnWk0FIu5t_4D698FGuiik"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1lT03s3G4nCgnWk0FIu5t_4D698FGuiik",
+    "semanasNoChart": 36
   },
   {
     "title": "end of an era. (EP)",
@@ -273,7 +426,8 @@
     "artist": "Paul Carter",
     "releaseDateIso": "2026-03-23",
     "genero": "ALTERNATIVE/ROCK",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1lT03s3G4nCgnWk0FIu5t_4D698FGuiik"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1lT03s3G4nCgnWk0FIu5t_4D698FGuiik",
+    "semanasNoChart": 22
   },
   {
     "title": "Judas’s Last Words (7th Anniversary Edition)",
@@ -296,25 +450,44 @@
     "releaseDateIso": "2021-04-12"
   },
   {
+    "artist": "Raven",
+    "title": "Intimacy (Raven's Version)",
+    "releaseDateIso": "2022-05-02",
+    "semanasNoChart": 145,
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1sn-71XBEx21-7uA8ecZe1QB8fn5MWa_F"
+  },
+  {
+    "artist": "Raven",
+    "title": "The Mirage Lounge",
+    "releaseDateIso": "2023-02-01",
+    "semanasNoChart": 117,
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1sn-71XBEx21-7uA8ecZe1QB8fn5MWa_F"
+  },
+  {
     "title": "1997",
     "artist": "Raven",
     "releaseDateIso": "2024-12-02",
     "genero": "POP",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1sn-71XBEx21-7uA8ecZe1QB8fn5MWa_F"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1sn-71XBEx21-7uA8ecZe1QB8fn5MWa_F",
+    "semanasNoChart": 80
   },
   {
     "title": "The Mirage Lodge",
     "artist": "Raven",
     "releaseDateIso": "2025-12-15",
     "genero": "POP",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1sn-71XBEx21-7uA8ecZe1QB8fn5MWa_F"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1sn-71XBEx21-7uA8ecZe1QB8fn5MWa_F",
+    "semanasNoChart": 36
   },
   {
     "title": "Losing is the new Winning!",
     "artist": "Raven",
     "releaseDateIso": "2026-03-27",
     "genero": "POP",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1sn-71XBEx21-7uA8ecZe1QB8fn5MWa_F"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1sn-71XBEx21-7uA8ecZe1QB8fn5MWa_F",
+    "semanasNoChart": 18
   },
   {
     "title": "WASTELAND. (2025)",
@@ -342,28 +515,32 @@
     "artist": "Rayna",
     "releaseDateIso": "2025-02-07",
     "genero": "POP",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1FCHTjDbXibkEm6CdHd3yDhQ7HI0HoMSQ"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1FCHTjDbXibkEm6CdHd3yDhQ7HI0HoMSQ",
+    "semanasNoChart": 75
   },
   {
     "title": "WASTELAND",
     "artist": "Rayna",
     "releaseDateIso": "2025-07-07",
     "genero": "POP",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1FCHTjDbXibkEm6CdHd3yDhQ7HI0HoMSQ"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1FCHTjDbXibkEm6CdHd3yDhQ7HI0HoMSQ",
+    "semanasNoChart": 60
   },
   {
     "title": "Anti Tour: The Unseen Chapters",
     "artist": "Rayna",
     "releaseDateIso": "2025-09-01",
     "genero": "POP",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1FCHTjDbXibkEm6CdHd3yDhQ7HI0HoMSQ"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1FCHTjDbXibkEm6CdHd3yDhQ7HI0HoMSQ",
+    "semanasNoChart": 51
   },
   {
     "title": "Lasso",
     "artist": "Rayna",
     "releaseDateIso": "2026-02-23",
     "genero": "POP",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1FCHTjDbXibkEm6CdHd3yDhQ7HI0HoMSQ"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1FCHTjDbXibkEm6CdHd3yDhQ7HI0HoMSQ",
+    "semanasNoChart": 27
   },
   {
     "title": "Lasso (2026)",
@@ -378,31 +555,39 @@
   {
     "title": "Elysian Street",
     "artist": "Rose Thompson",
-    "releaseDateIso": "2021-04-03"
+    "releaseDateIso": "2021-04-03",
+    "semanasNoChart": 111,
+    "genero": "POP"
   },
   {
     "title": "Gentleman Prefer Blondes",
     "artist": "Rose Thompson",
     "releaseDateIso": "2025-10-13",
     "genero": "POP",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1zrYh4JIq6ViNFRRZm7f48GUJxFOyz_VN"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1zrYh4JIq6ViNFRRZm7f48GUJxFOyz_VN",
+    "semanasNoChart": 45
   },
   {
     "title": "GEISHA",
     "artist": "SA5M",
-    "releaseDateIso": "2023-05-08"
+    "releaseDateIso": "2023-05-08",
+    "semanasNoChart": 107,
+    "genero": "POP"
   },
   {
     "title": "bookers list",
     "artist": "SA5M",
-    "releaseDateIso": "2023-09-18"
+    "releaseDateIso": "2023-09-18",
+    "semanasNoChart": 90,
+    "genero": "POP"
   },
   {
     "title": "Supermodel",
     "artist": "SA5M",
     "releaseDateIso": "2025-07-07",
     "genero": "POP",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1RhyIXOJh8D2iIhigiNyE63uLVNvsPs3d"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1RhyIXOJh8D2iIhigiNyE63uLVNvsPs3d",
+    "semanasNoChart": 60
   },
   {
     "title": "Coming Of Age Ceremony: The EP",
@@ -422,11 +607,19 @@
     "releaseDateIso": "2025-09-08"
   },
   {
+    "artist": "Sa5m & Moon Girls",
+    "title": "Coming Of Age Ceremony: The EP",
+    "releaseDateIso": "2025-09-08",
+    "semanasNoChart": 50,
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1CWC9-JywIRFdOhok30l0rUYk57WC9bno"
+  },
+  {
     "title": "Bloomwreck",
     "artist": "Sabine",
     "releaseDateIso": "2025-08-25",
     "genero": "R&B",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1UZtLweo-_fhW80zaHzxP0F-TrPvnPPDd"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1UZtLweo-_fhW80zaHzxP0F-TrPvnPPDd",
+    "semanasNoChart": 52
   },
   {
     "title": "Utopia EP",
@@ -444,9 +637,19 @@
     "releaseDateIso": "2020-04-06"
   },
   {
+    "artist": "TED",
+    "title": "The Parable of the Self-Sabouter",
+    "releaseDateIso": "2022-02-21",
+    "semanasNoChart": 155,
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1BKJfsSN_NxP5Azj4NC62ImNchsCzr7u-"
+  },
+  {
     "title": "VENUS: The Venus Intensity",
     "artist": "TED",
-    "releaseDateIso": "2025-05-21"
+    "releaseDateIso": "2025-05-21",
+    "semanasNoChart": 111,
+    "genero": "POP"
   },
   {
     "title": "Solivagant",
@@ -460,7 +663,8 @@
     "artist": "TED",
     "releaseDateIso": "2026-03-02",
     "genero": "POP",
-    "coverUrl": "https://drive.google.com/uc?export=view&id=1BKJfsSN_NxP5Azj4NC62ImNchsCzr7u-"
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1BKJfsSN_NxP5Azj4NC62ImNchsCzr7u-",
+    "semanasNoChart": 50
   },
   {
     "title": "Hottest Of The Year",
@@ -468,8 +672,38 @@
     "releaseDateIso": "2021-09-27"
   },
   {
+    "artist": "The Rich White Lady",
+    "title": "Hottest Of The Year (Hottest Edition)",
+    "releaseDateIso": "2021-12-06",
+    "semanasNoChart": 166,
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1LCjEY_CLwpT4Wmmnb5IGHdIalonB0nZH"
+  },
+  {
+    "artist": "The Rich White Lady",
+    "title": "BITCH FROM THE FUTURE",
+    "releaseDateIso": "2022-05-02",
+    "semanasNoChart": 145,
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1LCjEY_CLwpT4Wmmnb5IGHdIalonB0nZH"
+  },
+  {
+    "artist": "Toonya Parker",
+    "title": "Mamacita Volume 1",
+    "releaseDateIso": "2023-03-22",
+    "semanasNoChart": 112,
+    "genero": "LATIN",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1bXZbcF0gi2JHR3KkslvKyb9jwLe2F5mr"
+  },
+  {
+    "artist": "Various Artists",
+    "title": "The Batman (Soundtrack)",
+    "releaseDateIso": "2022-03-28",
+    "semanasNoChart": 150
+  },
+  {
     "title": "RECONSTRUCTION",
-    "artist": "Yasmin"
+    "artist": "Yasmin",
+    "semanasNoChart": 94,
+    "genero": "R&B"
   },
   {
     "title": "Midnight Confessions EP",

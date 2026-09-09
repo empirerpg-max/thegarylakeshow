@@ -303,21 +303,50 @@ convidado que interage com a tela, não Gary escolhendo por ele.
   só o nome em texto, sem quebrar. Claude não gera nem escolhe logo de marca
   por conta própria — a imagem é sempre a que Gary colocar nessa coluna.
 
-## `dados/certificacoes.json` — semanas em chart e certificação (real)
+## As 4 abas "Billboard Hot 100 / Sold Out" que Gary pediu pra usar
 
-Extraído da planilha `saidosCharts` (materiais que já saíram dos charts,
-ID `1GPQ17NvdhST3boTf3sJ0esJMtwWjhdaUNKSiAGLnPQ0`, indicada por Gary):
-**117 registros reais** com `semanasNoChart`, `salesStreams` e
-`certificacao` (ex.: "7x Platinum"). Isso é exatamente o dado que a API
-pública nunca deu (ver pendência de `/api/charts` mais acima) — encontrado
-numa fonte totalmente diferente. Alimenta a peça nova do Arquivo Gary
-"O maior tempo no chart" (peça 8).
+Gary pediu explicitamente que o Arquivo Gary (e o Flop ou Hit) se baseiem
+nestas 4 abas específicas, dentro de duas planilhas:
 
-`dados/albuns.json` também foi enriquecido: a planilha `chartsAlbums`
-(ID `1wUoCpi7_VSbXBhu7XGsqs2ZAJBwcPrx_TFmTS0OMyhY`, indicada por Gary) tinha
-176 linhas, das quais 31 eram álbuns novos que não estavam na aba "Albuns"
-da planilha principal — mesclados sem duplicar (86 álbuns no total agora,
-antes eram 71).
+- `1ThRhljmAS41JmVBPkPtYwe0JQHRx9Pih2PQAPT2ebyA` → aba **BILLBOARD HOT 100**
+  (gid=0) e aba **MÚSICAS_SOLDOUT** (gid=591501484).
+- `1wUoCpi7_VSbXBhu7XGsqs2ZAJBwcPrx_TFmTS0OMyhY` → aba **DADOS ÁLBUNS**
+  (gid=0) e aba **SOLD OUT** (gid=1715174304).
+
+**Lição aprendida no processo**: a ferramenta de leitura do Google Drive
+disponível nesta sessão não informa o *nome* da aba — só o conteúdo das
+colunas. Por isso, identificar qual tabela do texto corrido corresponde a
+qual aba exige olhar a estrutura das colunas, não buscar o nome literal da
+aba no texto (buscar "SOLDOUT" no conteúdo não acha nada, porque essa
+palavra só existe no nome da aba, nunca dentro dos dados). Isso gerou uma
+confusão real numa sessão — registrado aqui pra não repetir.
+
+- **BILLBOARD HOT 100**: identificada pela coluna "CHART" tendo o valor
+  literal "BILLBOARD HOT 100" em cada linha. Só **106 registros reais**
+  vieram nesta leitura, cobrindo 2 semanas (25/05/2020 e 01/06/2020) — a
+  aba pode ter mais semanas que não couberam na leitura (a planilha inteira
+  tem ~90 abas e é grande demais pra ler de uma vez). Somados a
+  `dados/chartsHistorico.json` com `pais: "BILLBOARD HOT 100"`,
+  `plataforma: "Billboard"` e um campo extra `dataCompleta` (DD/MM/AAAA,
+  mais preciso que só o mês).
+- **MÚSICAS_SOLDOUT**: identificada pelas colunas ARTISTA PRINCIPAL /
+  MÚSICA / NÚMERO DE SEMANAS / SALES+STREAMS / CERTIFICAÇÃO. **145
+  registros reais** (mais completo que uma tentativa anterior de 117, que
+  vinha de uma planilha standalone separada com o mesmo conteúdo
+  aparentemente desatualizado). Vira `dados/certificacoes.json` por
+  completo — alimenta a peça 8 do Arquivo Gary, "O maior tempo no chart".
+- **DADOS ÁLBUNS**: identificada pelas colunas ACT PRINCIPAL / NOME DO
+  ALBUM / NÚMERO DE FAIXAS / CAPA / GÊNERO. 176 linhas, mescladas em
+  `dados/albuns.json`.
+- **SOLD OUT** (álbuns): identificada pelas colunas ARTISTA / DATA DE
+  LANÇAMENTO / NÚMERO DE SEMANAS / NOME DO ALBUM / CAPA / GÊNERO. 414
+  linhas na planilha, 60 com artista e título preenchidos (o resto são
+  linhas de agrupamento/mescladas sem esses campos) — mescladas em
+  `dados/albuns.json`, adicionando `semanasNoChart` aos álbuns que já
+  existiam e criando novos quando não existiam.
+
+`dados/albuns.json` está em **110 álbuns** agora (era 71 antes desta
+etapa). `dados/chartsHistorico.json` está em **28.537 registros**.
 
 ## Verificação de nota Metacritic (checado a fundo)
 
