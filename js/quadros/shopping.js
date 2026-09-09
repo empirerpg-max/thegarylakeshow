@@ -4,6 +4,7 @@
 // do artista, só recebe a dica pronta via sync.js no momento certo (regra do
 // CLAUDE.md: nada de gabarito adiantado no HTML do palco).
 import { normalizarNome } from "./arquivo-gary.js";
+import { resolverImagemDrive } from "../dados.js";
 
 function apareceNoTexto(texto, nomeNormalizado) {
   return normalizarNome(texto).includes(nomeNormalizado);
@@ -82,16 +83,21 @@ export function resolverArtista(nomeArtista, dados) {
   const encontrado = artistas.find((a) => normalizarNome(a.nome) === nomeNormalizado);
   return {
     nome: nomeArtista,
-    foto: encontrado?.foto || "",
+    foto: resolverImagemDrive(encontrado?.foto || ""),
   };
 }
 
-/** Monta o card completo de uma loja: artista, dicas e foto. */
-export function montarCardLoja(loja, nomeArtista, dados) {
+/**
+ * Monta o card completo de uma loja: artista, dicas e foto. `fotoReserva` é
+ * a coluna "Foto (reserva)" da aba Shopping — usada só quando o artista não
+ * tem foto cadastrada em dados/artistas.json.
+ */
+export function montarCardLoja(loja, nomeArtista, dados, fotoReserva = "") {
+  const fotoDoCatalogo = resolverArtista(nomeArtista, dados).foto;
   return {
     loja,
     artista: nomeArtista,
     dicas: gerarDicas(nomeArtista, dados),
-    foto: resolverArtista(nomeArtista, dados).foto,
+    foto: fotoDoCatalogo || resolverImagemDrive(fotoReserva),
   };
 }

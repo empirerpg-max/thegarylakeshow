@@ -132,7 +132,7 @@
 
   <script type="module">
     import { enviar, aoReceber } from './js/sync.js';
-    import { carregar } from './js/dados.js';
+    import { carregar, resolverImagemDrive } from './js/dados.js';
     import { montarDossie } from './js/quadros/arquivo-gary.js';
     import { montarCardLoja } from './js/quadros/shopping.js';
     import { listarCandidatos, resumirChart } from './js/quadros/flop-ou-hit.js';
@@ -216,7 +216,7 @@
       // preenchida pra uma loja, o palco cai no botão só com o nome.
       enviar('shopping:mostrar-lojas', {
         lojas: lojas
-          .map((l) => ({ nome: l['Loja'], foto: l['Foto loja'] || '' }))
+          .map((l) => ({ nome: l['Loja'], foto: resolverImagemDrive(l['Foto loja'] || '') }))
           .filter((l) => l.nome),
       });
 
@@ -225,7 +225,8 @@
         const nomeArtista = linha['Artista'];
         if (!nomeLoja || !nomeArtista) return;
 
-        const card = montarCardLoja(nomeLoja, nomeArtista, dados);
+        const fotoReserva = linha['Foto (reserva, só se o artista não tiver foto no jogo)'] || '';
+        const card = montarCardLoja(nomeLoja, nomeArtista, dados, fotoReserva);
         const el = document.createElement('div');
         el.className = 'loja-card cartao-vidro';
         el.dataset.loja = nomeLoja;
@@ -358,10 +359,11 @@
       const candidato = candidatosFlop[Number(seletorLancamento.value)];
       if (!candidato) return;
       const { musica } = candidato;
+      const capaCorrigida = resolverImagemDrive(musica.coverUrl || '');
 
       cardLancamentoPreview.innerHTML = `
         <div class="card-lancamento cartao-vidro">
-          ${musica.coverUrl ? `<img src="${musica.coverUrl}" alt="${musica.title}" />` : ''}
+          ${capaCorrigida ? `<img src="${capaCorrigida}" alt="${musica.title}" />` : ''}
           <strong>${musica.artist}</strong> — ${musica.title}
         </div>
       `;
@@ -370,7 +372,7 @@
       enviar('flop-ou-hit:mostrar-lancamento', {
         artista: musica.artist,
         titulo: musica.title,
-        capa: musica.coverUrl || '',
+        capa: capaCorrigida,
       });
     });
 
