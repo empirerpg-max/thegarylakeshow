@@ -71,35 +71,39 @@ Apple Store          → Sabine (foto cadastrada)
 
 #### Munição de pesquisa (vinda de dados/)
 
-Fonte: `dados/chartsHistorico.json` (histórico real, só cobre Paul Carter).
+Fonte: `dados/chartsHistorico.json` (28.431 registros reais, ~38 artistas,
+80 países — corrigido nesta versão; uma extração anterior tinha, por erro
+meu, ficado limitada só ao Paul Carter, o que estava errado).
 
 ```
-Paul Carter - Lion's Den — Spotify, BRASIL:
-  Abril:  #3
-  Maio:   #1   (pico)
-  Junho:  #12
-  Julho:  #22
+Alexxa Hills - deal with it — Spotify:
+  BRASIL:  #1 (Julho, único mês com registro — single mais recente dela no chart)
+  ÁFRICA DO SUL, ALEMANHA, ANGOLA, ARGENTINA, ESTADOS UNIDOS, REINO UNIDO,
+  FRANÇA, JAPÃO, e outros ~70 países: também #1 em Julho
+  (exceções: Austrália #2, Chipre #3, Porto Rico #4)
 ```
 
-> **Por que esse lançamento:** é o único do catálogo com histórico de chart
-> completo (mês a mês) que temos hoje — os outros lançamentos em
-> `dados/musicas.json` não têm posição de chart registrada em
-> `dados/chartsHistorico.json`. Sorteio "de verdade" (aleatório entre vários)
-> só vai ser possível quando mais artistas tiverem histórico de chart
-> extraído.
+> **Por que essa faixa:** é da própria convidada (mais pessoal que puxar de
+> outro artista), e tem resultado real e forte — #1 em quase todo o mundo.
+> Ainda não é um sorteio aleatório de verdade entre todo o catálogo (isso
+> exigiria uma lógica de sorteio no site, que não foi implementada ainda) —
+> por ora é uma escolha manual sobre dado real.
 
 #### Roteiro do quadro
 
-- Mostrar capa + título + artista de "Lion's Den" (Paul Carter), sem número na tela.
+- Mostrar capa + título + artista de "deal with it" (Alexxa Hills), sem número na tela.
 - Alexxa Hills crava: flopou ou hitou?
-- Revelar: pico #1 no Spotify Brasil em Maio, caiu pra #22 em Julho.
-- Tela marca acertou ou errou.
+- Revelar: #1 no Spotify em praticamente todo o mundo (Brasil incluso) em Julho.
+- Tela marca acertou ou errou (spoiler: provavelmente ela acerta — é difícil
+  cravar "flopou" numa própria música e estar errada quando ela bombou assim).
 
 ### Quadro: Arquivo Gary
 
 #### Munição de pesquisa (vinda de dados/)
 
-Fonte: `node scripts/dossie.mjs "Alexxa Hills"` — reproduzido abaixo.
+Fonte: `node scripts/dossie.mjs "Alexxa Hills"` — reproduzido abaixo (rodado
+depois da correção do `chartsHistorico.json`, que antes tinha ficado
+indevidamente limitado só ao Paul Carter).
 
 ```
 --- O primeiro lançamento ---
@@ -112,22 +116,34 @@ Bloodrush — 2020-08-18
 1126 dias em silêncio
 entre "Bloodrush" (2020-08-18) e "baddest of them all remix with TED" (2023-09-18)
 
+--- A pior colocação em chart ---
+#50 (o fundo do chart — é um Top 50, confirmado que nenhuma música do
+dataset inteiro passa de posição 50) — "TED - Miss Perfect Blonde
+feat. Alexxa Hills", Spotify, várias países empatados em #50 em Abril
+(ex.: África do Sul, Alemanha, Angola)
+
+--- O maior salto de posição ---
+"TED - Miss Perfect Blonde feat. Alexxa Hills" caiu 16 posições:
+de #34 (Fevereiro) para #50 (Abril)
+
 --- O lançamento que ninguém comentou ---
 "deal with it" — 2 comentário(s)
 
---- indisponíveis (sem dado real) ---
-O que ele espera que ninguém lembre → sem nota (metacriticAvg) registrada
-A pior colocação em chart → sem entrada em dados/chartsHistorico.json
-O maior salto de posição → mesmo motivo
+--- indisponível (sem dado real, e isso é honesto) ---
+O que ele espera que ninguém lembre → a coluna "Média Metacritic" está
+vazia em TODAS as 77 linhas da aba Musicas que temos, não só nas dela —
+não é uma lacuna específica da Alexxa, é o jogo inteiro sem essa métrica
+preenchida ainda.
 ```
 
 #### Roteiro do quadro
 
 - Gary abre a "pasta confidencial" de Alexxa Hills no palco.
-- Escolher UMA das 4 peças disponíveis para puxar ao vivo (sugestão: "O maior
-  hiato" — 1126 dias entre Bloodrush e o remix com TED é um gancho de
-  conversa forte).
-- Perguntar a ela o que aconteceu nesse hiato antes de revelar o contexto.
+- Escolher UMA das 6 peças disponíveis para puxar ao vivo. Duas sugestões
+  fortes: "O maior hiato" (1126 dias entre Bloodrush e o remix com TED) ou
+  "A pior colocação em chart" (#50 num feat com o TED — bom gancho pra
+  perguntar sobre trabalhar em faixa de outro artista vs. carreira solo).
+- Perguntar a ela sobre o contexto antes de revelar o dado.
 
 ### Quadro: Feat Forçado
 

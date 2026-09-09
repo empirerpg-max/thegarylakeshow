@@ -176,9 +176,14 @@ sync da API pública) e **duas chaves novas que a API pública não fornece**:
 - `chartsHistorico` — array de `{ posicao, pais, musica, plataforma, mes }`.
   Vem da planilha real de charts (`chartsBase`, fora do escopo da API
   pública) — só dá pra popular lendo a planilha diretamente via Google
-  Drive, não pelo `sincronizar.mjs`. Formato de exemplo real já salvo em
-  `dados/chartsHistorico.json` (26 registros do Paul Carter, extraídos à
-  mão desta planilha como prova de conceito).
+  Drive, não pelo `sincronizar.mjs`. **`dados/chartsHistorico.json` tem
+  28.431 registros reais, cobrindo ~38 artistas em 80 países, Spotify,
+  meses de Janeiro a Julho** — extraído da mesma leitura da planilha
+  `chartsBase` (ID `1ThRhljmAS41JmVBPkPtYwe0JQHRx9Pih2PQAPT2ebyA`). Numa
+  primeira versão este arquivo tinha sido filtrado só pra "Paul Carter" por
+  um corte de escopo malfeito da minha parte — isso estava errado e foi
+  corrigido: a planilha sempre teve todos os artistas, o filtro indevido
+  que limitava a cobertura era meu, não da fonte de dados.
 - `comentarios` — array de `{ artista, musica, contagemComentarios }`. Mesma
   situação: vem de colunas de comentário dentro de `registrosCharts`, não da
   API pública. **Ainda não populado** — nenhum arquivo `dados/comentarios.json`
@@ -230,11 +235,15 @@ via Google Drive — mesmo mecanismo já usado pra `chartsHistorico.json`:
   Uma música realmente ignorada (zero comentários) pode estar escondida
   fora desse recorte, e o motor não tem como saber disso hoje.
 
-Isso é o suficiente pra 6 das 7 peças do Arquivo Gary funcionarem de
-verdade com qualquer um dos 33 artistas — testado com Alexxa Hills e Marco,
-ambos com múltiplas peças retornando dado real. Só "maior salto de posição"
-segue limitado, porque `chartsHistorico.json` só tem histórico completo do
-Paul Carter (ver seção anterior).
+Com o `chartsHistorico.json` corrigido (ver acima, 28.431 registros reais,
+~38 artistas), **6 das 7 peças** funcionam de verdade pra qualquer artista
+coberto — testado com Alexxa Hills: primeiro lançamento, álbum mais antigo,
+maior hiato, pior colocação em chart, maior salto de posição e menos
+repercussão todas retornaram dado real. Só "o que ele espera que ninguém
+lembre" ficou indisponível pra ela — e isso é honesto, não uma limitação
+minha: a coluna "Média Metacritic" está **vazia em todas as 77 linhas** da
+aba Musicas que temos, não só nas dela. Conferido diretamente na planilha
+antes de escrever isso.
 
 **Isso é um recorte manual, não a fonte completa.** O catálogo real do jogo
 provavelmente tem mais de 76 músicas e mais de 33 artistas — esse foi só o

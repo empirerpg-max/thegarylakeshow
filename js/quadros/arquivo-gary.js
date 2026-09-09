@@ -178,16 +178,24 @@ function pecaPiorColocacao(dados, nomeNormalizado) {
       motivo: "Nenhuma entrada em dados/chartsHistorico.json menciona esse artista.",
     };
   }
-  const pior = entradas.slice().sort((a, b) => Number(b.posicao) - Number(a.posicao))[0];
+  const ordenadas = entradas.slice().sort((a, b) => Number(b.posicao) - Number(a.posicao));
+  const pior = ordenadas[0];
+  const LIMITE_REGISTROS = 15;
+  const registrosBrutos = ordenadas
+    .slice(0, LIMITE_REGISTROS)
+    .map((e) => `${e.musica} — #${e.posicao} (${e.plataforma}, ${e.pais}, ${e.mes})`);
+  if (ordenadas.length > LIMITE_REGISTROS) {
+    registrosBrutos.push(
+      `... +${ordenadas.length - LIMITE_REGISTROS} outra(s) aparição(ões) em outros países/meses, omitidas aqui por espaço (o cálculo do dado principal já considerou todas).`,
+    );
+  }
   return {
     id: "pior-colocacao",
     titulo: "A pior colocação em chart",
     disponivel: true,
     dadoPrincipal: `#${pior.posicao} — ${pior.musica}`,
     contextoSecundario: `${pior.plataforma || ""} · ${pior.pais || ""} · ${pior.mes || ""}`.trim(),
-    registrosBrutos: entradas.map(
-      (e) => `${e.musica} — #${e.posicao} (${e.plataforma}, ${e.pais}, ${e.mes})`,
-    ),
+    registrosBrutos,
   };
 }
 
