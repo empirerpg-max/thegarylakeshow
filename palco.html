@@ -152,6 +152,70 @@
       `;
     }
 
+    // --- Feat Forçado ---
+
+    let cronometroFeatId = null;
+
+    // Beep curto via Web Audio — sem depender de nenhum arquivo de áudio
+    // (assets/sons/ ainda está vazio). Toca uma vez por segundo nos 10s finais.
+    function tocarBeep() {
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.frequency.value = 880;
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        gain.gain.setValueAtTime(0.2, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.3);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.3);
+      } catch {
+        // navegador sem suporte a Web Audio: segue sem som, o cronômetro visual continua
+      }
+    }
+
+    function iniciarFeatForcado({ nome, duracaoSegundos }) {
+      if (cronometroFeatId) clearInterval(cronometroFeatId);
+      let restante = duracaoSegundos;
+
+      function render() {
+        const alerta = restante <= 10;
+        quadroAtual.innerHTML = `
+          <div class="cartao-vidro cartao-central" style="text-align:center;">
+            <div style="font-family: var(--fonte-titulo); text-transform: uppercase; color: var(--amarelo); font-size: 1.1em;">
+              Feat forçado com
+            </div>
+            <div style="font-family: var(--fonte-titulo); text-transform: uppercase; color: var(--rosa); font-size: 1.8em; margin: 0.3em 0;">
+              ${nome}
+            </div>
+            <div style="font-family: var(--fonte-titulo); font-size: 3em; color: ${alerta ? 'var(--fogo-vermelho)' : 'var(--azul)'};">
+              ${restante}
+            </div>
+          </div>
+        `;
+      }
+
+      render();
+      cronometroFeatId = setInterval(() => {
+        restante -= 1;
+        if (restante <= 10 && restante > 0) tocarBeep();
+        if (restante <= 0) {
+          clearInterval(cronometroFeatId);
+          cronometroFeatId = null;
+          quadroAtual.innerHTML = `
+            <div class="cartao-vidro cartao-central" style="text-align:center;">
+              <div style="font-family: var(--fonte-titulo); text-transform: uppercase; color: var(--amarelo); font-size: 2em;">
+                TEMPO ESGOTADO
+              </div>
+            </div>
+          `;
+          return;
+        }
+        render();
+      }, 1000);
+    }
+
     function mostrarResultadoFlopOuHit(resultado) {
       const conteudo =
         resultado === 'acertou'
@@ -180,6 +244,8 @@
         mostrarChartFlopOuHit(mensagem.dados);
       } else if (mensagem.comando === 'flop-ou-hit:resultado') {
         mostrarResultadoFlopOuHit(mensagem.dados.resultado);
+      } else if (mensagem.comando === 'feat-forcado:sorteio') {
+        iniciarFeatForcado(mensagem.dados);
       }
     });
   </script>

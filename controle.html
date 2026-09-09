@@ -118,6 +118,16 @@
     <div id="placar-flop-ou-hit" style="color: var(--amarelo); font-weight: bold;">Placar: 0 acertou · 0 errou</div>
   </div>
 
+  <div id="painel-feat-forcado" class="painel cartao-vidro">
+    <h2 class="titulo" style="font-size: 1.2rem;">Feat Forçado</h2>
+    <div class="campo">
+      <label for="campo-convidado-feat">Nome do convidado (pra nunca sortear ele mesmo)</label>
+      <input type="text" id="campo-convidado-feat" placeholder="Ex: Alexxa Hills" />
+    </div>
+    <button id="btn-sortear-feat">Sortear e iniciar cronômetro de 60s no palco</button>
+    <div id="resultado-feat" style="margin-top: 1rem; color: var(--rosa); font-weight: bold;"></div>
+  </div>
+
   <div id="painel-arquivo-gary" class="painel cartao-vidro">
     <h2 class="titulo" style="font-size: 1.2rem;">Arquivo Gary</h2>
     <div class="campo">
@@ -136,6 +146,7 @@
     import { montarDossie } from './js/quadros/arquivo-gary.js';
     import { montarCardLoja } from './js/quadros/shopping.js';
     import { listarCandidatos, resumirChart } from './js/quadros/flop-ou-hit.js';
+    import { sortear } from './js/quadros/feat-forcado.js';
 
     const botao = document.getElementById('btn-enviar');
     const seletorQuadro = document.getElementById('seletor-quadro');
@@ -157,6 +168,10 @@
     const btnMarcarAcertou = document.getElementById('btn-marcar-acertou');
     const btnMarcarErrou = document.getElementById('btn-marcar-errou');
     const placarFlopEl = document.getElementById('placar-flop-ou-hit');
+    const painelFeatForcado = document.getElementById('painel-feat-forcado');
+    const campoConvidadoFeat = document.getElementById('campo-convidado-feat');
+    const btnSortearFeat = document.getElementById('btn-sortear-feat');
+    const resultadoFeat = document.getElementById('resultado-feat');
 
     // O painel de cada quadro aparece assim que Gary escolhe ele no menu —
     // não precisa esperar clicar em "Enviar para o palco" (o palco em si só
@@ -165,9 +180,21 @@
       painelArquivoGary.classList.toggle('ativo', seletorQuadro.value === 'arquivo-gary');
       painelShopping.classList.toggle('ativo', seletorQuadro.value === 'shopping');
       painelFlopOuHit.classList.toggle('ativo', seletorQuadro.value === 'flop-ou-hit');
+      painelFeatForcado.classList.toggle('ativo', seletorQuadro.value === 'feat-forcado');
       if (seletorQuadro.value === 'flop-ou-hit') {
         await montarPainelFlopOuHit();
       }
+    });
+
+    btnSortearFeat.addEventListener('click', async () => {
+      const listaFeat = await carregar('programa/Feat').catch(() => []);
+      const nomeSorteado = sortear(campoConvidadoFeat.value.trim(), listaFeat);
+      if (!nomeSorteado) {
+        resultadoFeat.textContent = 'Não há artistas suficientes em dados/programa/Feat.json pra sortear (excluindo o convidado).';
+        return;
+      }
+      resultadoFeat.textContent = `Sorteado: ${nomeSorteado}`;
+      enviar('feat-forcado:sorteio', { nome: nomeSorteado, duracaoSegundos: 60 });
     });
 
     botao.addEventListener('click', async () => {
