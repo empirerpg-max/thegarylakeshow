@@ -22,13 +22,13 @@ Tom: irônico, direto, sem bajular o convidado.
 
 1. **Abertura do Gary** — manchetes da semana do jogo, Gary sozinho, 2 a 3 min.
 2. **Aquecimento** — perguntas rápidas de carreira, sem tela compartilhada, 5 min.
-3. **Quadro fixo**
-4. **Quadro rotativo**
-5. **Encerramento** com ritual fixo
+3. **Quadros** — Gary escolhe quais e quantos quadros (Shopping, Flop ou Hit,
+   Arquivo Gary, Feat Forçado) entram no episódio, na ordem que preferir.
+4. **Encerramento** com ritual fixo
 
-### Regra de ouro
-
-**Nunca mais de dois quadros por episódio.**
+Não existe mais limite fixo de quadros por episódio — cada episódio se ajusta
+ao que Gary decidir para aquela semana. (Histórico: até aqui a regra era
+"no máximo dois quadros", removida a pedido do Gary.)
 
 ## Fichas dos quadros
 

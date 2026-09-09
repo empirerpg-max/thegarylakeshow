@@ -4,10 +4,12 @@
 - **Nome do artista no jogo:** [nome exatamente como aparece no catálogo/dados/]
 - **Data de gravação:**
 
-## Quadros deste episódio (máximo 2, regra de ouro)
+## Quadros deste episódio
 
-- [ ] [nome do quadro fixo/rotativo escolhido]
-- [ ] [segundo quadro, se houver]
+- [ ] [nome do quadro]
+- [ ] [nome do quadro]
+- [ ] [nome do quadro, se houver]
+- [ ] [nome do quadro, se houver]
 
 ---
 
@@ -27,9 +29,13 @@ Perguntas rápidas de carreira. Não usa dados do catálogo, é sobre a pessoa/p
 - Pergunta 2:
 - Pergunta 3:
 
-## 3. Quadro fixo: [nome]
+## 3. Quadros
 
-### Munição de pesquisa (vinda de dados/)
+Repita esta subseção para cada quadro escolhido acima.
+
+### Quadro: [nome]
+
+#### Munição de pesquisa (vinda de dados/)
 
 > Cole aqui os registros brutos usados para montar este quadro. Se o dado não
 > existir em dados/, escreva "não encontrado em dados/" — nunca invente.
@@ -38,23 +44,11 @@ Perguntas rápidas de carreira. Não usa dados do catálogo, é sobre a pessoa/p
 [trechos de dados/*.json relevantes]
 ```
 
-### Roteiro do quadro
+#### Roteiro do quadro
 
 - 
 
-## 4. Quadro rotativo: [nome]
-
-### Munição de pesquisa (vinda de dados/)
-
-```
-[trechos de dados/*.json relevantes]
-```
-
-### Roteiro do quadro
-
-- 
-
-## 5. Encerramento (ritual fixo)
+## 4. Encerramento (ritual fixo)
 
 - Pergunta de encerramento:
 - Ritual fixo: [descrever quando o ritual for definido]
