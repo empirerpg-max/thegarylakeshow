@@ -30,16 +30,17 @@ async function main() {
     return;
   }
 
-  const [musicas, albuns, musicVideos, artistas, chartsHistorico, comentarios] = await Promise.all([
+  const [musicas, albuns, musicVideos, artistas, chartsHistorico, comentarios, certificacoes] = await Promise.all([
     carregarJson("musicas"),
     carregarJson("albuns"),
     carregarJson("musicVideos"),
     carregarJson("artistas"),
     carregarJson("chartsHistorico"),
     carregarJson("comentarios"),
+    carregarJson("certificacoes"),
   ]);
 
-  const dados = { musicas, albuns, musicVideos, artistas, chartsHistorico, comentarios };
+  const dados = { musicas, albuns, musicVideos, artistas, chartsHistorico, comentarios, certificacoes };
   const dossie = montarDossie(nomeArtista, dados);
 
   if (!dossie.encontrado) {

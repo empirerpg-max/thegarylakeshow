@@ -275,10 +275,42 @@ function pecaMenosRepercussao(dados, nomeNormalizado) {
   };
 }
 
+// --- Peça 8: mais tempo no chart (semanas) ---
+// Espera dados.certificacoes: [{ artist, title, semanasNoChart, salesStreams, certificacao }]
+function pecaMaisSemanasChart(dados, nomeNormalizado) {
+  const certificacoes = dados.certificacoes || [];
+  const doArtista = certificacoes.filter((c) => apareceNoTexto(c.artist, nomeNormalizado));
+  const comSemanas = doArtista.filter((c) => c.semanasNoChart != null && c.semanasNoChart !== "");
+  if (comSemanas.length === 0) {
+    return {
+      id: "mais-semanas-chart",
+      titulo: "O maior tempo no chart",
+      disponivel: false,
+      motivo: "Nenhuma entrada em dados/certificacoes.json (planilha de materiais que já saíram dos charts) menciona esse artista com semanas registradas.",
+    };
+  }
+  const campeao = comSemanas.slice().sort((a, b) => Number(b.semanasNoChart) - Number(a.semanasNoChart))[0];
+  const extras = [
+    campeao.certificacao && `certificação: ${campeao.certificacao}`,
+    campeao.salesStreams && `sales+streams: ${campeao.salesStreams}`,
+  ].filter(Boolean);
+  return {
+    id: "mais-semanas-chart",
+    titulo: "O maior tempo no chart",
+    disponivel: true,
+    dadoPrincipal: `${campeao.title} — ${campeao.semanasNoChart} semanas`,
+    contextoSecundario: extras.join(" · "),
+    registrosBrutos: [
+      `${campeao.artist} — ${campeao.title}: ${campeao.semanasNoChart} semanas${extras.length ? " (" + extras.join(", ") + ")" : ""}`,
+    ],
+  };
+}
+
 /**
  * Monta o dossiê completo de um artista.
  * `dados` é um objeto com as chaves já carregadas de dados/*.json:
- *   { musicas, albuns, musicVideos, artistas, chartsHistorico, comentarios }
+ *   { musicas, albuns, musicVideos, artistas, chartsHistorico, comentarios,
+ *     certificacoes }
  * Chaves ausentes são tratadas como listas vazias — cada peça avisa
  * separadamente quando falta o que ela precisa, em vez de quebrar tudo.
  */
@@ -295,8 +327,9 @@ export function montarDossie(nomeArtista, dados) {
   const apareceEmComentarios = (dados.comentarios || []).some(
     (c) => apareceNoTexto(c.artista, nomeNormalizado) || apareceNoTexto(c.musica, nomeNormalizado),
   );
+  const apareceEmCertificacoes = (dados.certificacoes || []).some((c) => apareceNoTexto(c.artist, nomeNormalizado));
 
-  if (!cadastrado && catalogo.length === 0 && !apareceEmCharts && !apareceEmComentarios) {
+  if (!cadastrado && catalogo.length === 0 && !apareceEmCharts && !apareceEmComentarios && !apareceEmCertificacoes) {
     return {
       encontrado: false,
       aviso:
@@ -313,6 +346,7 @@ export function montarDossie(nomeArtista, dados) {
     pecaPiorColocacao(dados, nomeNormalizado),
     pecaMaiorSalto(dados, nomeNormalizado),
     pecaMenosRepercussao(dados, nomeNormalizado),
+    pecaMaisSemanasChart(dados, nomeNormalizado),
   ];
 
   return {

@@ -1,79 +1,130 @@
 [
   {
-    "title": "All Italian",
-    "artist": "Max Gorghan",
-    "releaseDateIso": "2024-11-01"
+    "title": "Christmas Again",
+    "artist": "Abigail",
+    "releaseDateIso": "2025-12-15",
+    "genero": "R&B",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=16gNolyLw_YSGlGiGSgScEeS-v12qrbkH"
   },
   {
-    "title": "1997",
-    "artist": "Raven",
-    "releaseDateIso": "2024-12-02"
+    "title": "Trio Enfurecido",
+    "artist": "Aimê",
+    "releaseDateIso": "2021-02-22"
+  },
+  {
+    "title": "Bloodrush",
+    "artist": "Alexxa Hills",
+    "releaseDateIso": "2020-08-18"
   },
   {
     "title": "AH! The Concert (Live at Empire Festival 2024)",
     "artist": "Alexxa Hills",
-    "releaseDateIso": "2025-01-06"
-  },
-  {
-    "title": "The Singles Collection (2025)",
-    "artist": "Rayna",
-    "releaseDateIso": "2025-02-02"
+    "releaseDateIso": "2025-01-06",
+    "genero": "DANCE/ELECTRONIC",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1_K_XsaNh3cLbi4Qm_4OCStyzQAjGOIu6"
   },
   {
     "title": "villain",
     "artist": "Alexxa Hills",
-    "releaseDateIso": "2025-02-03"
+    "releaseDateIso": "2025-03-31",
+    "genero": "DANCE/ELECTRONIC",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1_K_XsaNh3cLbi4Qm_4OCStyzQAjGOIu6"
+  },
+  {
+    "title": "villain [deluxe]",
+    "artist": "Alexxa Hills",
+    "releaseDateIso": "2025-09-29"
+  },
+  {
+    "title": "villain (deluxe)",
+    "artist": "Alexxa Hills",
+    "releaseDateIso": "2025-10-06",
+    "genero": "DANCE/ELECTRONIC",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1_K_XsaNh3cLbi4Qm_4OCStyzQAjGOIu6"
+  },
+  {
+    "title": "ANGELA",
+    "artist": "Angela",
+    "releaseDateIso": "2025-07-28",
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1SvqQ9V5e_OTWNc9ryYXpcaqqkC00b6lT"
+  },
+  {
+    "title": "The Midnight Sweet Memories",
+    "artist": "Anne Gray"
+  },
+  {
+    "title": "PATROL",
+    "artist": "Anníbal Páris",
+    "releaseDateIso": "2025-06-30",
+    "genero": "RAP/HIP-HOP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1cp5lWZcpDPIYsPuv8bwY_tQApx2xgm2B"
+  },
+  {
+    "title": "Digital Eden",
+    "artist": "Bremm",
+    "releaseDateIso": "2026-04-07"
+  },
+  {
+    "title": "I'm Not Going Anywhere",
+    "artist": "Clara Kant",
+    "releaseDateIso": "2020-04-20"
+  },
+  {
+    "title": "Greatest Hits: Yesterday",
+    "artist": "Clara Kant",
+    "releaseDateIso": "2020-08-17"
   },
   {
     "title": "Rebel Idol",
     "artist": "Dagny",
-    "releaseDateIso": "2025-03-27"
+    "releaseDateIso": "2025-03-31",
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=16sRjsXORGZJ5_71NmLxwtAdb8ApfVHfY"
   },
   {
-    "title": "KDLA (Full Album)",
-    "artist": "KYEH",
-    "releaseDateIso": "2025-04-28"
+    "title": "Coming Out",
+    "artist": "Denver",
+    "releaseDateIso": "2020-02-24"
   },
   {
-    "title": "Garden Echoes",
-    "artist": "Matthew",
-    "releaseDateIso": "2025-04-28"
-  },
-  {
-    "title": "Evergreen",
-    "artist": "Paul Carter",
-    "releaseDateIso": "2025-04-28"
-  },
-  {
-    "title": "VENUS: The Venus Intensity",
-    "artist": "TED",
-    "releaseDateIso": "2025-05-21"
-  },
-  {
-    "title": "Elysian Street",
-    "artist": "Rose Thompson",
-    "releaseDateIso": "2021-04-03"
+    "title": "Pioneer of Broken Heart EP",
+    "artist": "Emma",
+    "releaseDateIso": "2020-04-13"
   },
   {
     "title": "Fruto Proibido",
     "artist": "EVA"
   },
   {
-    "title": "The N World",
-    "artist": "Nathan"
-  },
-  {
-    "title": "GEISHA",
-    "artist": "SA5M",
-    "releaseDateIso": "2023-05-08"
-  },
-  {
     "title": "MERCURIO",
     "artist": "EVA"
   },
   {
-    "title": "The Midnight Sweet Memories",
-    "artist": "Anne Gray"
+    "title": "HollyWouldn’t",
+    "artist": "EVA",
+    "releaseDateIso": "2025-10-27"
+  },
+  {
+    "title": "HollyWouldn't",
+    "artist": "EVA",
+    "releaseDateIso": "2025-10-27",
+    "genero": "LATIN",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1-8WrP2Czz_xqksvu4I8U1au0drg60mVS"
+  },
+  {
+    "title": "exposed.",
+    "artist": "Helenna",
+    "releaseDateIso": "2020-06-01"
+  },
+  {
+    "title": "PASSPORT",
+    "artist": "Higor"
+  },
+  {
+    "title": "The Chain",
+    "artist": "John Groff",
+    "releaseDateIso": "2020-01-23"
   },
   {
     "title": "Pink Flamingo Shit",
@@ -84,22 +135,186 @@
     "artist": "KYEH"
   },
   {
-    "title": "RECONSTRUCTION",
-    "artist": "Yasmin"
+    "title": "KDLA (Full Album)",
+    "artist": "KYEH",
+    "releaseDateIso": "2025-04-28"
   },
   {
-    "title": "bookers list",
-    "artist": "SA5M",
-    "releaseDateIso": "2023-09-18"
+    "title": "KDLA",
+    "artist": "Kyeh",
+    "releaseDateIso": "2025-05-26",
+    "genero": "LATIN",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1ljvgIhxRT8qcj6iLw3pxdX809Ss1E5_8"
   },
   {
-    "title": "PASSPORT",
-    "artist": "Higor"
+    "title": "KDLA (Deluxe Edition)",
+    "artist": "Kyeh",
+    "releaseDateIso": "2025-09-14",
+    "genero": "LATIN",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1ljvgIhxRT8qcj6iLw3pxdX809Ss1E5_8"
   },
   {
-    "title": "Supermodel",
-    "artist": "SA5M",
-    "releaseDateIso": "2025-07-09"
+    "title": "LoReina",
+    "artist": "Loreena",
+    "releaseDateIso": "2025-10-27"
+  },
+  {
+    "title": "LoReeina",
+    "artist": "Loreena",
+    "releaseDateIso": "2026-02-09",
+    "genero": "LATIN",
+    "coverUrl": "https://drive.google.com/file/d/1V7fLleAg5jKr64d124X5iX8ZjIjz-H0S/view?usp=sharing"
+  },
+  {
+    "title": "Golden Times",
+    "artist": "Louise",
+    "releaseDateIso": "2020-04-13"
+  },
+  {
+    "title": "FREE YOURSELF",
+    "artist": "Luke",
+    "releaseDateIso": "2021-07-26"
+  },
+  {
+    "title": "Rise Up!",
+    "artist": "Marco",
+    "releaseDateIso": "2020-06-15"
+  },
+  {
+    "title": "ANTONIO",
+    "artist": "Marco",
+    "releaseDateIso": "2020-11-23"
+  },
+  {
+    "title": "NeuroDance",
+    "artist": "Marco",
+    "releaseDateIso": "2026-01-26",
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1_FycvMPqjDDfVx-BqLTj_Ygto9GVpYVy"
+  },
+  {
+    "title": "Nothing Extraordinary Happens in September",
+    "artist": "Mark"
+  },
+  {
+    "title": "Garden Echoes",
+    "artist": "Matthew",
+    "releaseDateIso": "2025-04-28",
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1NcVF2o-TtS6N3We_8ttFaCm1dkppVfZd"
+  },
+  {
+    "title": "All Italian",
+    "artist": "Max Gorghan",
+    "releaseDateIso": "2024-11-01"
+  },
+  {
+    "title": "The N World",
+    "artist": "Nathan"
+  },
+  {
+    "title": "OVERDRIVE: The EP",
+    "artist": "OVERDRIVE",
+    "releaseDateIso": "2025-08-18"
+  },
+  {
+    "title": "The First EP",
+    "artist": "OVERDRIVE",
+    "releaseDateIso": "2025-08-26"
+  },
+  {
+    "title": "MORNINGSTAR",
+    "artist": "Paul Carter",
+    "releaseDateIso": "2020-03-30"
+  },
+  {
+    "title": "King Of Swords",
+    "artist": "Paul Carter",
+    "releaseDateIso": "2021-07-12"
+  },
+  {
+    "title": "Evergreen",
+    "artist": "Paul Carter",
+    "releaseDateIso": "2025-04-28",
+    "genero": "ALTERNATIVE/ROCK",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1lT03s3G4nCgnWk0FIu5t_4D698FGuiik"
+  },
+  {
+    "title": "Evergreen (deluxe edition)",
+    "artist": "Paul Carter",
+    "releaseDateIso": "2025-08-11",
+    "genero": "ALTERNATIVE/ROCK",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1lT03s3G4nCgnWk0FIu5t_4D698FGuiik"
+  },
+  {
+    "title": "Evergreen (Deluxe)",
+    "artist": "Paul Carter",
+    "releaseDateIso": "2025-08-13"
+  },
+  {
+    "title": "Spotify Singles",
+    "artist": "Paul Carter",
+    "releaseDateIso": "2025-09-17"
+  },
+  {
+    "title": "end of an era.",
+    "artist": "Paul Carter",
+    "releaseDateIso": "2025-12-15",
+    "genero": "ALTERNATIVE/ROCK",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1lT03s3G4nCgnWk0FIu5t_4D698FGuiik"
+  },
+  {
+    "title": "end of an era. (EP)",
+    "artist": "Paul Carter",
+    "releaseDateIso": "2025-12-19"
+  },
+  {
+    "title": "Judas's Last Words (7th Anniversary Edition)",
+    "artist": "Paul Carter",
+    "releaseDateIso": "2026-03-23",
+    "genero": "ALTERNATIVE/ROCK",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1lT03s3G4nCgnWk0FIu5t_4D698FGuiik"
+  },
+  {
+    "title": "Judas’s Last Words (7th Anniversary Edition)",
+    "artist": "Paul Carter",
+    "releaseDateIso": "2026-03-31"
+  },
+  {
+    "title": "THE RETURN: Final Lap",
+    "artist": "PussyOnFire!",
+    "releaseDateIso": "2021-03-01"
+  },
+  {
+    "title": "The Mirage Hotel & Casino",
+    "artist": "Raven",
+    "releaseDateIso": "2020-08-03"
+  },
+  {
+    "title": "LA MORENINHA",
+    "artist": "Raven",
+    "releaseDateIso": "2021-04-12"
+  },
+  {
+    "title": "1997",
+    "artist": "Raven",
+    "releaseDateIso": "2024-12-02",
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1sn-71XBEx21-7uA8ecZe1QB8fn5MWa_F"
+  },
+  {
+    "title": "The Mirage Lodge",
+    "artist": "Raven",
+    "releaseDateIso": "2025-12-15",
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1sn-71XBEx21-7uA8ecZe1QB8fn5MWa_F"
+  },
+  {
+    "title": "Losing is the new Winning!",
+    "artist": "Raven",
+    "releaseDateIso": "2026-03-27",
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1sn-71XBEx21-7uA8ecZe1QB8fn5MWa_F"
   },
   {
     "title": "WASTELAND. (2025)",
@@ -118,93 +333,37 @@
     "artist": "Rayna"
   },
   {
-    "title": "PATROL",
-    "artist": "Anníbal Páris",
-    "releaseDateIso": "2025-07-30"
+    "title": "The Singles Collection (2025)",
+    "artist": "Rayna",
+    "releaseDateIso": "2025-02-02"
   },
   {
-    "title": "ANGELA",
-    "artist": "Angela",
-    "releaseDateIso": "2025-08-03"
+    "title": "rayna: the complete collection",
+    "artist": "Rayna",
+    "releaseDateIso": "2025-02-07",
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1FCHTjDbXibkEm6CdHd3yDhQ7HI0HoMSQ"
   },
   {
-    "title": "Evergreen (Deluxe)",
-    "artist": "Paul Carter",
-    "releaseDateIso": "2025-08-13"
+    "title": "WASTELAND",
+    "artist": "Rayna",
+    "releaseDateIso": "2025-07-07",
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1FCHTjDbXibkEm6CdHd3yDhQ7HI0HoMSQ"
   },
   {
-    "title": "The First EP",
-    "artist": "OVERDRIVE",
-    "releaseDateIso": "2025-08-26"
+    "title": "Anti Tour: The Unseen Chapters",
+    "artist": "Rayna",
+    "releaseDateIso": "2025-09-01",
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1FCHTjDbXibkEm6CdHd3yDhQ7HI0HoMSQ"
   },
   {
-    "title": "Bloomwreck",
-    "artist": "Sabine",
-    "releaseDateIso": "2025-08-26"
-  },
-  {
-    "title": "SOLIVAGANT",
-    "artist": "TED",
-    "releaseDateIso": "2025-09-10"
-  },
-  {
-    "title": "Coming Of Age Ceremony",
-    "artist": "SA5M & Moon Girls",
-    "releaseDateIso": "2025-09-08"
-  },
-  {
-    "title": "Spotify Singles",
-    "artist": "Paul Carter",
-    "releaseDateIso": "2025-09-17"
-  },
-  {
-    "title": "villain [deluxe]",
-    "artist": "Alexxa Hills",
-    "releaseDateIso": "2025-09-29"
-  },
-  {
-    "title": "Gentleman Prefer Blondes",
-    "artist": "Rose Thompson",
-    "releaseDateIso": "2025-10-13"
-  },
-  {
-    "title": "Pop Vixen",
-    "artist": "SA5M",
-    "releaseDateIso": "2025-10-20"
-  },
-  {
-    "title": "LoReina",
-    "artist": "Loreena",
-    "releaseDateIso": "2025-10-27"
-  },
-  {
-    "title": "HollyWouldn’t",
-    "artist": "EVA",
-    "releaseDateIso": "2025-10-27"
-  },
-  {
-    "title": "Nothing Extraordinary Happens in September",
-    "artist": "Mark"
-  },
-  {
-    "title": "end of an era. (EP)",
-    "artist": "Paul Carter",
-    "releaseDateIso": "2025-12-19"
-  },
-  {
-    "title": "The Mirage Lodge",
-    "artist": "Raven",
-    "releaseDateIso": "2025-12-19"
-  },
-  {
-    "title": "Christmas Again",
-    "artist": "Abigail",
-    "releaseDateIso": "2025-12-22"
-  },
-  {
-    "title": "NeuroDance",
-    "artist": "Marco",
-    "releaseDateIso": "2026-01-27"
+    "title": "Lasso",
+    "artist": "Rayna",
+    "releaseDateIso": "2026-02-23",
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1FCHTjDbXibkEm6CdHd3yDhQ7HI0HoMSQ"
   },
   {
     "title": "Lasso (2026)",
@@ -212,44 +371,62 @@
     "releaseDateIso": "2026-02-27"
   },
   {
-    "title": "Judas’s Last Words (7th Anniversary Edition)",
-    "artist": "Paul Carter",
-    "releaseDateIso": "2026-03-31"
+    "title": "The First EP",
+    "artist": "RED",
+    "releaseDateIso": "2021-04-05"
   },
   {
-    "title": "Digital Eden",
-    "artist": "Bremm",
-    "releaseDateIso": "2026-04-07"
+    "title": "Elysian Street",
+    "artist": "Rose Thompson",
+    "releaseDateIso": "2021-04-03"
   },
   {
-    "title": "Losing is the new Winning!",
-    "artist": "Raven",
-    "releaseDateIso": "2026-05-04"
+    "title": "Gentleman Prefer Blondes",
+    "artist": "Rose Thompson",
+    "releaseDateIso": "2025-10-13",
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1zrYh4JIq6ViNFRRZm7f48GUJxFOyz_VN"
   },
   {
-    "title": "Bloodrush",
-    "artist": "Alexxa Hills",
-    "releaseDateIso": "2020-08-18"
+    "title": "GEISHA",
+    "artist": "SA5M",
+    "releaseDateIso": "2023-05-08"
   },
   {
-    "title": "MORNINGSTAR",
-    "artist": "Paul Carter",
-    "releaseDateIso": "2020-03-30"
+    "title": "bookers list",
+    "artist": "SA5M",
+    "releaseDateIso": "2023-09-18"
   },
   {
-    "title": "industry",
-    "artist": "TED",
-    "releaseDateIso": "2020-04-06"
+    "title": "Supermodel",
+    "artist": "SA5M",
+    "releaseDateIso": "2025-07-07",
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1RhyIXOJh8D2iIhigiNyE63uLVNvsPs3d"
   },
   {
-    "title": "Rise Up!",
-    "artist": "Marco",
-    "releaseDateIso": "2020-06-15"
+    "title": "Coming Of Age Ceremony: The EP",
+    "artist": "SA5M",
+    "releaseDateIso": "2025-09-10",
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1RhyIXOJh8D2iIhigiNyE63uLVNvsPs3d"
   },
   {
-    "title": "The Chain",
-    "artist": "John Groff",
-    "releaseDateIso": "2020-01-23"
+    "title": "Pop Vixen",
+    "artist": "SA5M",
+    "releaseDateIso": "2025-10-20"
+  },
+  {
+    "title": "Coming Of Age Ceremony",
+    "artist": "SA5M & Moon Girls",
+    "releaseDateIso": "2025-09-08"
+  },
+  {
+    "title": "Bloomwreck",
+    "artist": "Sabine",
+    "releaseDateIso": "2025-08-25",
+    "genero": "R&B",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1UZtLweo-_fhW80zaHzxP0F-TrPvnPPDd"
   },
   {
     "title": "Utopia EP",
@@ -257,84 +434,42 @@
     "releaseDateIso": "2020-01-23"
   },
   {
-    "title": "Coming Out",
-    "artist": "Denver",
-    "releaseDateIso": "2020-02-24"
-  },
-  {
-    "title": "Golden Times",
-    "artist": "Louise",
-    "releaseDateIso": "2020-04-13"
-  },
-  {
-    "title": "Pioneer of Broken Heart EP",
-    "artist": "Emma",
-    "releaseDateIso": "2020-04-13"
-  },
-  {
-    "title": "I'm Not Going Anywhere",
-    "artist": "Clara Kant",
-    "releaseDateIso": "2020-04-20"
-  },
-  {
-    "title": "exposed.",
-    "artist": "Helenna",
-    "releaseDateIso": "2020-06-01"
-  },
-  {
-    "title": "THE RETURN: Final Lap",
-    "artist": "PussyOnFire!",
-    "releaseDateIso": "2021-03-01"
-  },
-  {
-    "title": "The Mirage Hotel & Casino",
-    "artist": "Raven",
-    "releaseDateIso": "2020-08-03"
-  },
-  {
-    "title": "Greatest Hits: Yesterday",
-    "artist": "Clara Kant",
-    "releaseDateIso": "2020-08-17"
-  },
-  {
     "title": "Bailão do Skorpion",
     "artist": "Skorpion",
     "releaseDateIso": "2020-11-16"
   },
   {
-    "title": "ANTONIO",
-    "artist": "Marco",
-    "releaseDateIso": "2020-11-23"
+    "title": "industry",
+    "artist": "TED",
+    "releaseDateIso": "2020-04-06"
   },
   {
-    "title": "Trio Enfurecido",
-    "artist": "Aimê",
-    "releaseDateIso": "2021-02-22"
+    "title": "VENUS: The Venus Intensity",
+    "artist": "TED",
+    "releaseDateIso": "2025-05-21"
   },
   {
-    "title": "The First EP",
-    "artist": "RED",
-    "releaseDateIso": "2021-04-05"
+    "title": "Solivagant",
+    "artist": "TED",
+    "releaseDateIso": "2025-09-10",
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1BKJfsSN_NxP5Azj4NC62ImNchsCzr7u-"
   },
   {
-    "title": "LA MORENINHA",
-    "artist": "Raven",
-    "releaseDateIso": "2021-04-12"
-  },
-  {
-    "title": "King Of Swords",
-    "artist": "Paul Carter",
-    "releaseDateIso": "2021-07-12"
-  },
-  {
-    "title": "FREE YOURSELF",
-    "artist": "Luke",
-    "releaseDateIso": "2021-07-26"
+    "title": "Solivagant: The Next Route",
+    "artist": "TED",
+    "releaseDateIso": "2026-03-02",
+    "genero": "POP",
+    "coverUrl": "https://drive.google.com/uc?export=view&id=1BKJfsSN_NxP5Azj4NC62ImNchsCzr7u-"
   },
   {
     "title": "Hottest Of The Year",
     "artist": "The Rich White Lady",
     "releaseDateIso": "2021-09-27"
+  },
+  {
+    "title": "RECONSTRUCTION",
+    "artist": "Yasmin"
   },
   {
     "title": "Midnight Confessions EP",

@@ -303,6 +303,22 @@ convidado que interage com a tela, não Gary escolhendo por ele.
   só o nome em texto, sem quebrar. Claude não gera nem escolhe logo de marca
   por conta própria — a imagem é sempre a que Gary colocar nessa coluna.
 
+## `dados/certificacoes.json` — semanas em chart e certificação (real)
+
+Extraído da planilha `saidosCharts` (materiais que já saíram dos charts,
+ID `1GPQ17NvdhST3boTf3sJ0esJMtwWjhdaUNKSiAGLnPQ0`, indicada por Gary):
+**117 registros reais** com `semanasNoChart`, `salesStreams` e
+`certificacao` (ex.: "7x Platinum"). Isso é exatamente o dado que a API
+pública nunca deu (ver pendência de `/api/charts` mais acima) — encontrado
+numa fonte totalmente diferente. Alimenta a peça nova do Arquivo Gary
+"O maior tempo no chart" (peça 8).
+
+`dados/albuns.json` também foi enriquecido: a planilha `chartsAlbums`
+(ID `1wUoCpi7_VSbXBhu7XGsqs2ZAJBwcPrx_TFmTS0OMyhY`, indicada por Gary) tinha
+176 linhas, das quais 31 eram álbuns novos que não estavam na aba "Albuns"
+da planilha principal — mesclados sem duplicar (86 álbuns no total agora,
+antes eram 71).
+
 ## Verificação de nota Metacritic (checado a fundo)
 
 Antes de reportar "indisponível" nessa peça, Claude já verificou o campo

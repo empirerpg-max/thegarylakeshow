@@ -183,15 +183,16 @@
     });
 
     async function carregarDadosCatalogo() {
-      const [musicas, albuns, musicVideos, artistas, chartsHistorico, comentarios] = await Promise.all([
+      const [musicas, albuns, musicVideos, artistas, chartsHistorico, comentarios, certificacoes] = await Promise.all([
         carregar('musicas').catch(() => []),
         carregar('albuns').catch(() => []),
         carregar('musicVideos').catch(() => []),
         carregar('artistas').catch(() => []),
         carregar('chartsHistorico').catch(() => []),
         carregar('comentarios').catch(() => []),
+        carregar('certificacoes').catch(() => []),
       ]);
-      return { musicas, albuns, musicVideos, artistas, chartsHistorico, comentarios };
+      return { musicas, albuns, musicVideos, artistas, chartsHistorico, comentarios, certificacoes };
     }
 
     // --- Shopping ---

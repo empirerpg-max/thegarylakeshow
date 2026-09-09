@@ -1,0 +1,938 @@
+[
+  {
+    "artist": "Anníbal Páris",
+    "title": "Freak Out (feat. Sabine)",
+    "releaseDateIso": "2020-04-13",
+    "semanasNoChart": 74,
+    "salesStreams": "7.658.902",
+    "certificacao": "7x Platinum"
+  },
+  {
+    "artist": "Yasmin",
+    "title": "Cherry",
+    "releaseDateIso": "2020-09-06",
+    "semanasNoChart": 53,
+    "salesStreams": "6.547.534",
+    "certificacao": "6x Platinum"
+  },
+  {
+    "artist": "Brandy",
+    "title": "Ringtone",
+    "releaseDateIso": "2020-04-06",
+    "semanasNoChart": 75,
+    "salesStreams": "7.096.902",
+    "certificacao": "7x Platinum"
+  },
+  {
+    "artist": "Matthew",
+    "title": "Fine",
+    "releaseDateIso": "2020-09-13",
+    "semanasNoChart": 52,
+    "salesStreams": "7.542.470",
+    "certificacao": "7x Platinum"
+  },
+  {
+    "artist": "Samantha Cooper",
+    "title": "7feets (feat. Paul Carter)",
+    "releaseDateIso": "2020-04-27",
+    "semanasNoChart": 72,
+    "salesStreams": "7.888.105",
+    "certificacao": "7x Platinum"
+  },
+  {
+    "artist": "Yasmin",
+    "title": "Runaway (feat. Anníbal Páris)",
+    "releaseDateIso": "2020-07-26",
+    "semanasNoChart": 59,
+    "salesStreams": "6.589.164",
+    "certificacao": "6x Platinum"
+  },
+  {
+    "artist": "Brandy",
+    "title": "Zoom Remix (feat. Anníbal Páris)",
+    "releaseDateIso": "2020-09-13",
+    "semanasNoChart": 52,
+    "salesStreams": "6.370.543",
+    "certificacao": "6x Platinum"
+  },
+  {
+    "artist": "Toonya Parker",
+    "title": "Lie To The Devil (feat. Marco)",
+    "releaseDateIso": "2020-08-09",
+    "semanasNoChart": 57,
+    "salesStreams": "6.006.746",
+    "certificacao": "6x Platinum"
+  },
+  {
+    "artist": "Alexxa Hills",
+    "title": "Lost (feat. RED)",
+    "releaseDateIso": "2020-08-16",
+    "semanasNoChart": 56,
+    "salesStreams": "5.733.142",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Matthew",
+    "title": "Fake Mirror (feat. Brandy & Sabine)",
+    "releaseDateIso": "2020-09-13",
+    "semanasNoChart": 52,
+    "salesStreams": "5.928.549",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Louise",
+    "title": "Sober",
+    "releaseDateIso": "2020-04-13",
+    "semanasNoChart": 74,
+    "salesStreams": "7.365.881",
+    "certificacao": "7x Platinum"
+  },
+  {
+    "artist": "Toonya Parker",
+    "title": "Fake Love (feat. RED)",
+    "releaseDateIso": "2020-08-09",
+    "semanasNoChart": 57,
+    "salesStreams": "5.793.271",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Paul Carter",
+    "title": "Praying",
+    "releaseDateIso": "2020-03-30",
+    "semanasNoChart": 76,
+    "salesStreams": "6.571.525",
+    "certificacao": "6x Platinum"
+  },
+  {
+    "artist": "Marco",
+    "title": "Resentment",
+    "releaseDateIso": "2019-08-18",
+    "semanasNoChart": 67,
+    "salesStreams": "5.149.319",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Toonya Parker",
+    "title": "Public Dancing (feat. Kendall)",
+    "releaseDateIso": "2020-07-12",
+    "semanasNoChart": 61,
+    "salesStreams": "5.246.085",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Raven",
+    "title": "San Diego (feat. Mark)",
+    "releaseDateIso": "2020-08-16",
+    "semanasNoChart": 56,
+    "salesStreams": "5.161.974",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Marco",
+    "title": "In My Arms",
+    "releaseDateIso": "2020-03-30",
+    "semanasNoChart": 76,
+    "salesStreams": "5.418.806",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Yasmin",
+    "title": "I Love It (feat. Sabine)",
+    "releaseDateIso": "2020-05-18",
+    "semanasNoChart": 69,
+    "salesStreams": "6.080.407",
+    "certificacao": "6x Platinum"
+  },
+  {
+    "artist": "Louise",
+    "title": "BDSM (feat. Sabine & Destiny)",
+    "releaseDateIso": "2020-04-13",
+    "semanasNoChart": 74,
+    "salesStreams": "6.058.445",
+    "certificacao": "6x Platinum"
+  },
+  {
+    "artist": "Paul Carter",
+    "title": "Most Beautiful Almost",
+    "releaseDateIso": "2020-09-13",
+    "semanasNoChart": 52,
+    "salesStreams": "5.594.163",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Alexxa Hills",
+    "title": "Slave",
+    "releaseDateIso": "2020-06-15",
+    "semanasNoChart": 65,
+    "salesStreams": "4.815.934",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Melissa",
+    "title": "Female Instinct (feat. Nineoff)",
+    "releaseDateIso": "2020-07-12",
+    "semanasNoChart": 61,
+    "salesStreams": "5.616.518",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Anne Gray",
+    "title": "Illusion",
+    "releaseDateIso": "2020-07-12",
+    "semanasNoChart": 61,
+    "salesStreams": "5.562.126",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Louise",
+    "title": "Ziriguidum (feat. Steele)",
+    "releaseDateIso": "2020-03-16",
+    "semanasNoChart": 78,
+    "salesStreams": "5.625.362",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Brandy",
+    "title": "Black Empire (feat. Sabine, Kendall & Louise)",
+    "releaseDateIso": "2020-05-11",
+    "semanasNoChart": 70,
+    "salesStreams": "5.426.901",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Kendall",
+    "title": "Obsessed Bitch",
+    "releaseDateIso": "2020-04-06",
+    "semanasNoChart": 75,
+    "salesStreams": "5.649.920",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Harriet",
+    "title": "Intensive",
+    "releaseDateIso": "2020-04-06",
+    "semanasNoChart": 75,
+    "salesStreams": "5.750.199",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Sabine",
+    "title": "Nightmare Woman",
+    "releaseDateIso": "2020-03-23",
+    "semanasNoChart": 77,
+    "salesStreams": "5.434.559",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Yasmin",
+    "title": "Disco Love (feat. Matthew)",
+    "releaseDateIso": "2020-06-08",
+    "semanasNoChart": 66,
+    "salesStreams": "5.033.565",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Raven",
+    "title": "Mirage",
+    "releaseDateIso": "2020-04-20",
+    "semanasNoChart": 73,
+    "salesStreams": "5.421.993",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Elettra",
+    "title": "True Feelings (from \"Love, Victor\")",
+    "releaseDateIso": "2020-09-06",
+    "semanasNoChart": 53,
+    "salesStreams": "4.969.212",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Samantha Cooper",
+    "title": "god bless",
+    "releaseDateIso": "2020-03-16",
+    "semanasNoChart": 78,
+    "salesStreams": "4.319.054",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Paul Carter",
+    "title": "Relover",
+    "releaseDateIso": "2020-05-25",
+    "semanasNoChart": 68,
+    "salesStreams": "5.616.478",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Elettra",
+    "title": "Hard Remix (feat. Paul Carter)",
+    "releaseDateIso": "2020-07-26",
+    "semanasNoChart": 59,
+    "salesStreams": "4.768.294",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Yasmin",
+    "title": "Twerk Rebola (feat. Skorpion)",
+    "releaseDateIso": "2020-06-15",
+    "semanasNoChart": 65,
+    "salesStreams": "4.319.878",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Melissa",
+    "title": "Supersonic",
+    "releaseDateIso": "2020-09-06",
+    "semanasNoChart": 53,
+    "salesStreams": "5.529.826",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Louise",
+    "title": "Lose Control (feat. David R)",
+    "releaseDateIso": "2020-06-15",
+    "semanasNoChart": 65,
+    "salesStreams": "5.147.186",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "BREMM",
+    "title": "Jogada (feat. Luna & Destiny)",
+    "releaseDateIso": "2020-06-15",
+    "semanasNoChart": 65,
+    "salesStreams": "5.089.178",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Raphael Sparrow",
+    "title": "Deception",
+    "releaseDateIso": "2020-03-30",
+    "semanasNoChart": 76,
+    "salesStreams": "4.957.429",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Anníbal Páris",
+    "title": "Lucifer",
+    "releaseDateIso": "2020-04-20",
+    "semanasNoChart": 73,
+    "salesStreams": "5.621.314",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "Harriet",
+    "title": "Flickers",
+    "releaseDateIso": "2020-08-23",
+    "semanasNoChart": 55,
+    "salesStreams": "4.898.987",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Anne Gray",
+    "title": "Hedonism",
+    "releaseDateIso": "2020-08-30",
+    "semanasNoChart": 54,
+    "salesStreams": "4.949.678",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Jake Curtis",
+    "title": "Honesty (No Love) [feat. Melissa]",
+    "releaseDateIso": "2020-06-21",
+    "semanasNoChart": 64,
+    "salesStreams": "4.302.992",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Paul Carter",
+    "title": "Lost Eden (feat. Denver)",
+    "releaseDateIso": "2020-07-05",
+    "semanasNoChart": 62,
+    "salesStreams": "4.795.414",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Denver",
+    "title": "Judgments",
+    "releaseDateIso": "2019-10-29",
+    "semanasNoChart": 57,
+    "salesStreams": "4.165.957",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Marco",
+    "title": "Elastic Love with Raven",
+    "releaseDateIso": "2020-07-19",
+    "semanasNoChart": 60,
+    "salesStreams": "4.568.038",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Helenna",
+    "title": "should i?",
+    "releaseDateIso": "2020-04-13",
+    "semanasNoChart": 74,
+    "salesStreams": "4.578.228",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Rose Thompson",
+    "title": "Expectations",
+    "releaseDateIso": "2020-07-19",
+    "semanasNoChart": 60,
+    "salesStreams": "4.384.661",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "PussyOnFire!",
+    "title": "Complexx",
+    "releaseDateIso": "2020-04-13",
+    "semanasNoChart": 74,
+    "salesStreams": "4.624.639",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Samantha Cooper",
+    "title": "love with the devil",
+    "releaseDateIso": "2020-03-16",
+    "semanasNoChart": 78,
+    "salesStreams": "4.389.830",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Samantha Cooper",
+    "title": "emancipation",
+    "releaseDateIso": "2020-06-08",
+    "semanasNoChart": 66,
+    "salesStreams": "4.850.861",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Marco",
+    "title": "Rise Up!",
+    "releaseDateIso": "2020-06-15",
+    "semanasNoChart": 65,
+    "salesStreams": "4.026.395",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Elettra",
+    "title": "Main Show",
+    "releaseDateIso": "2020-06-21",
+    "semanasNoChart": 64,
+    "salesStreams": "4.240.920",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Yasmin",
+    "title": "Energy (feat. Raphael Sparrow)",
+    "releaseDateIso": "2020-05-25",
+    "semanasNoChart": 68,
+    "salesStreams": "4.319.398",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Kendall",
+    "title": "Ego Fight (feat. Anníbal Páris & Sabine)",
+    "releaseDateIso": "2020-09-06",
+    "semanasNoChart": 53,
+    "salesStreams": "4.369.914",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Harriet",
+    "title": "So Insane",
+    "releaseDateIso": "2020-04-27",
+    "semanasNoChart": 72,
+    "salesStreams": "4.317.876",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Destiny",
+    "title": "Moon Girls (w/ Anne, Raven & Victoria White)",
+    "releaseDateIso": "2019-10-20",
+    "semanasNoChart": 58,
+    "salesStreams": "4.541.575",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Paul Carter",
+    "title": "pirophobia (feat. Steele)",
+    "releaseDateIso": "2019-11-05",
+    "semanasNoChart": 56,
+    "salesStreams": "3.725.469",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Nathan",
+    "title": "Runnin'",
+    "releaseDateIso": "2020-09-06",
+    "semanasNoChart": 53,
+    "salesStreams": "4.604.612",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Elettra",
+    "title": "Can't Stop Me",
+    "releaseDateIso": "2020-09-06",
+    "semanasNoChart": 53,
+    "salesStreams": "4.116.786",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Razing",
+    "title": "I Got You",
+    "releaseDateIso": "2020-07-26",
+    "semanasNoChart": 59,
+    "salesStreams": "4.390.535",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "PussyOnFire!",
+    "title": "Return",
+    "releaseDateIso": "2020-05-18",
+    "semanasNoChart": 69,
+    "salesStreams": "4.849.747",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Otilia",
+    "title": "Irrational Love (feat. Marco)",
+    "releaseDateIso": "2020-07-19",
+    "semanasNoChart": 60,
+    "salesStreams": "4.212.097",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Elettra",
+    "title": "The Promise",
+    "releaseDateIso": "2020-05-04",
+    "semanasNoChart": 71,
+    "salesStreams": "4.002.832",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "El Coyotte",
+    "title": "Candelabra (feat. Luna & BREMM)",
+    "releaseDateIso": "2020-08-30",
+    "semanasNoChart": 54,
+    "salesStreams": "4.670.607",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Raphael Sparrow",
+    "title": "Tension",
+    "releaseDateIso": "2020-08-02",
+    "semanasNoChart": 58,
+    "salesStreams": "4.295.756",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "A-Young",
+    "title": "Blossom",
+    "releaseDateIso": "2020-08-02",
+    "semanasNoChart": 58,
+    "salesStreams": "4.049.931",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Yasmin",
+    "title": "Pose (feat. RED)",
+    "releaseDateIso": "2020-06-01",
+    "semanasNoChart": 67,
+    "salesStreams": "4.045.408",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "SA5M",
+    "title": "Canopies",
+    "releaseDateIso": "2020-09-13",
+    "semanasNoChart": 52,
+    "salesStreams": "3.974.129",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "TED",
+    "title": "industry.",
+    "releaseDateIso": "2020-07-26",
+    "semanasNoChart": 59,
+    "salesStreams": "4.526.155",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "SA5M",
+    "title": "Black Stripe",
+    "releaseDateIso": "2020-08-30",
+    "semanasNoChart": 54,
+    "salesStreams": "4.568.892",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "RED",
+    "title": "Memories",
+    "releaseDateIso": "2020-07-12",
+    "semanasNoChart": 61,
+    "salesStreams": "4.368.559",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "PussyOnFire!",
+    "title": "How To Thank?",
+    "releaseDateIso": "2020-08-02",
+    "semanasNoChart": 58,
+    "salesStreams": "5.035.702",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "PussyOnFire!",
+    "title": "Why Do You Want To Lock Me Up (featuring Sabine)",
+    "releaseDateIso": "2020-06-21",
+    "semanasNoChart": 64,
+    "salesStreams": "4.431.834",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Denver",
+    "title": "Placebo",
+    "releaseDateIso": "2020-04-20",
+    "semanasNoChart": 73,
+    "salesStreams": "5.445.788",
+    "certificacao": "5x Platinum"
+  },
+  {
+    "artist": "MAX",
+    "title": "LIGHT",
+    "releaseDateIso": "2020-08-30",
+    "semanasNoChart": 54,
+    "salesStreams": "4.840.228",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Steele",
+    "title": "Black Gold (feat. Elena)",
+    "releaseDateIso": "2020-08-09",
+    "semanasNoChart": 57,
+    "salesStreams": "4.158.025",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Harriet",
+    "title": "Nostalgia",
+    "releaseDateIso": "2020-04-27",
+    "semanasNoChart": 72,
+    "salesStreams": "3.539.637",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Louise",
+    "title": "Urban Theory",
+    "releaseDateIso": "2019-08-18",
+    "semanasNoChart": 67,
+    "salesStreams": "3.547.231",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Matthew",
+    "title": "Grown Man (feat. Melissa)",
+    "releaseDateIso": "2019-08-18",
+    "semanasNoChart": 67,
+    "salesStreams": "3.776.790",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Paolo",
+    "title": "Destino (with Destiny)",
+    "releaseDateIso": "2020-06-28",
+    "semanasNoChart": 63,
+    "salesStreams": "3.960.072",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Kendall",
+    "title": "Bad Reputation",
+    "releaseDateIso": "2020-07-12",
+    "semanasNoChart": 61,
+    "salesStreams": "4.177.510",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "TED",
+    "title": "wild way. (feat. Destiny)",
+    "releaseDateIso": "2020-08-23",
+    "semanasNoChart": 55,
+    "salesStreams": "4.759.956",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Denver",
+    "title": "Peach",
+    "releaseDateIso": "2019-08-25",
+    "semanasNoChart": 66,
+    "salesStreams": "3.521.605",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Brandy",
+    "title": "Bootycall",
+    "releaseDateIso": "2020-06-21",
+    "semanasNoChart": 64,
+    "salesStreams": "4.057.027",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "RED",
+    "title": "Love Myself",
+    "releaseDateIso": "2020-06-15",
+    "semanasNoChart": 65,
+    "salesStreams": "4.187.556",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Anníbal Páris",
+    "title": "Old Times",
+    "releaseDateIso": "2020-06-15",
+    "semanasNoChart": 65,
+    "salesStreams": "4.858.442",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Rose Thompson",
+    "title": "Let Me (feat. DRAM)",
+    "releaseDateIso": "2020-06-21",
+    "semanasNoChart": 64,
+    "salesStreams": "4.039.979",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Brandy",
+    "title": "Skyscraper",
+    "releaseDateIso": "2020-08-02",
+    "semanasNoChart": 58,
+    "salesStreams": "3.849.863",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Harriet",
+    "title": "Your Own Taste",
+    "releaseDateIso": "2020-07-05",
+    "semanasNoChart": 62,
+    "salesStreams": "4.026.120",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Raven",
+    "title": "Check-In",
+    "releaseDateIso": "2020-07-05",
+    "semanasNoChart": 62,
+    "salesStreams": "4.240.544",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Clara Kant",
+    "title": "Huntress",
+    "releaseDateIso": "2020-06-28",
+    "semanasNoChart": 63,
+    "salesStreams": "3.669.718",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Samantha Cooper",
+    "title": "please, accept me",
+    "releaseDateIso": "2020-04-27",
+    "semanasNoChart": 72,
+    "salesStreams": "4.072.743",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "RED",
+    "title": "Tabloids (feat. TED)",
+    "releaseDateIso": "2020-06-08",
+    "semanasNoChart": 66,
+    "salesStreams": "4.202.765",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "RED",
+    "title": "Hearts Collide",
+    "releaseDateIso": "2020-08-30",
+    "semanasNoChart": 54,
+    "salesStreams": "4.880.270",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Paolo",
+    "title": "Jaguar (feat. Raphael Sparrow)",
+    "releaseDateIso": "2020-08-23",
+    "semanasNoChart": 55,
+    "salesStreams": "4.591.714",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Raven",
+    "title": "Location (feat. Raphael Sparrow & Skorpion)",
+    "releaseDateIso": "2020-06-01",
+    "semanasNoChart": 67,
+    "salesStreams": "3.835.763",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Kendall",
+    "title": "DOLLAR$ (feat. Steele)",
+    "releaseDateIso": "2020-05-25",
+    "semanasNoChart": 68,
+    "salesStreams": "3.898.419",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "The Dutchess",
+    "title": "Break The Wall",
+    "releaseDateIso": "2019-10-13",
+    "semanasNoChart": 59,
+    "salesStreams": "3.482.574",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Marco",
+    "title": "Best Movements",
+    "releaseDateIso": "2020-05-18",
+    "semanasNoChart": 69,
+    "salesStreams": "3.970.735",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Faye",
+    "title": "My Mind (feat. Marco)",
+    "releaseDateIso": "2020-08-09",
+    "semanasNoChart": 57,
+    "salesStreams": "3.675.349",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Marco",
+    "title": "deserve to be forgotten",
+    "releaseDateIso": "2020-08-09",
+    "semanasNoChart": 57,
+    "salesStreams": "4.185.308",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Denver",
+    "title": "Private Paradise (from \"Love, Victor\")",
+    "releaseDateIso": "2020-08-09",
+    "semanasNoChart": 57,
+    "salesStreams": "4.630.665",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Paul Carter",
+    "title": "Love Story (from \"Love, Victor\")",
+    "releaseDateIso": "2020-06-28",
+    "semanasNoChart": 63,
+    "salesStreams": "4.699.624",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Harriet",
+    "title": "Lost",
+    "releaseDateIso": "2020-07-05",
+    "semanasNoChart": 62,
+    "salesStreams": "3.631.847",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Razing",
+    "title": "Domesticated (feat. Sabine)",
+    "releaseDateIso": "2019-08-11",
+    "semanasNoChart": 68,
+    "salesStreams": "3.181.345",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "MAX",
+    "title": "Mere Puzzle (feat TED & El Coyotte)",
+    "releaseDateIso": "2019-08-25",
+    "semanasNoChart": 66,
+    "salesStreams": "3.187.216",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Destiny",
+    "title": "Rewrite the Stars",
+    "releaseDateIso": "2020-05-04",
+    "semanasNoChart": 71,
+    "salesStreams": "3.570.848",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Karol Morris",
+    "title": "Exile Me",
+    "releaseDateIso": "2020-04-27",
+    "semanasNoChart": 72,
+    "salesStreams": "3.174.954",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "A-Young",
+    "title": "Shoot",
+    "releaseDateIso": "2020-09-13",
+    "semanasNoChart": 52,
+    "salesStreams": "2.861.448",
+    "certificacao": "2x Platinum"
+  },
+  {
+    "artist": "Brandy",
+    "title": "The Dark Side Of Love",
+    "releaseDateIso": "2020-06-28",
+    "semanasNoChart": 63,
+    "salesStreams": "3.446.984",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Louise",
+    "title": "Won't Let You Go",
+    "releaseDateIso": "2020-08-09",
+    "semanasNoChart": 57,
+    "salesStreams": "4.848.598",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "MAX",
+    "title": "EUPHORIA",
+    "releaseDateIso": "2020-08-30",
+    "semanasNoChart": 54,
+    "salesStreams": "4.183.097",
+    "certificacao": "4x Platinum"
+  },
+  {
+    "artist": "Paul Carter",
+    "title": "PROUD! (from Disney's Frozen II Soundtrack)",
+    "releaseDateIso": "2019-10-29",
+    "semanasNoChart": 57,
+    "salesStreams": "3.020.614",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Razing",
+    "title": "100% Acid",
+    "releaseDateIso": "2020-05-25",
+    "semanasNoChart": 68,
+    "salesStreams": "3.349.313",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Samantha Cooper",
+    "title": "forgiveness song",
+    "releaseDateIso": "2020-07-19",
+    "semanasNoChart": 60,
+    "salesStreams": "3.896.316",
+    "certificacao": "3x Platinum"
+  },
+  {
+    "artist": "Helenna",
+    "title": "life, truth, control (feat. Anníbal Páris)",
+    "releaseDateIso": "2020-05-04",
+    "semanasNoChart": 71,
+    "salesStreams": "3.163.818",
+    "certificacao": "3x Platinum"
+  }
+]
