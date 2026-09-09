@@ -296,12 +296,12 @@ convidado que interage com a tela, não Gary escolhendo por ele.
   atual). O card do controle avisa isso explicitamente em vez de mostrar
   campo vazio sem explicação — a coluna "Foto (reserva)" da planilha existe
   exatamente pra esse caso, mas ainda não foi preenchida.
-- **Imagens de loja**: por ora, os cards (tanto controle quanto palco) usam
-  só o nome da loja em tipografia grande — não usei logo oficial de marca
-  (Gucci, Apple Store etc.) pra evitar depender de assets de terceiros sem
-  licença. Se Gary quiser logos de verdade, ele precisa fornecer os arquivos
-  de imagem (ou confirmar que pode usar o logo oficial) — Claude não gera
-  nem baixa logo de marca por conta própria.
+- **Imagens de loja**: controladas por Gary direto na planilha, na coluna
+  **"Foto loja"** da aba Shopping (`dados/programa/Shopping.json`, campo
+  `"Foto loja"`) — um link de imagem por loja. O palco usa essa foto no
+  botão da loja; se a coluna estiver vazia pra alguma loja, o botão cai pra
+  só o nome em texto, sem quebrar. Claude não gera nem escolhe logo de marca
+  por conta própria — a imagem é sempre a que Gary colocar nessa coluna.
 
 ## Verificação de nota Metacritic (checado a fundo)
 

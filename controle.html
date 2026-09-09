@@ -172,10 +172,14 @@
       ]);
       grade.innerHTML = '';
 
-      // Manda pro palco só os NOMES das lojas, sem artista nenhum — o
-      // convidado escolhe visualmente, sem saber quem está escondido ali.
+      // Manda pro palco só o NOME e a FOTO DA LOJA (coluna "Foto loja" da
+      // planilha) — nunca o artista. O convidado escolhe visualmente, sem
+      // saber quem está escondido ali. Se a coluna "Foto loja" não estiver
+      // preenchida pra uma loja, o palco cai no botão só com o nome.
       enviar('shopping:mostrar-lojas', {
-        lojas: lojas.map((l) => l['Loja']).filter(Boolean),
+        lojas: lojas
+          .map((l) => ({ nome: l['Loja'], foto: l['Foto loja'] || '' }))
+          .filter((l) => l.nome),
       });
 
       lojas.forEach((linha) => {

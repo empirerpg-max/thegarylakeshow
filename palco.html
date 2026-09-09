@@ -36,6 +36,16 @@
       text-align: center;
       cursor: pointer;
       color: var(--texto);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .loja-botao-palco img {
+      max-width: 100%;
+      max-height: 140px;
+      border-radius: 4px;
+      object-fit: contain;
     }
     .loja-botao-palco:hover,
     .loja-botao-palco:focus {
@@ -121,10 +131,14 @@
     // --- Shopping: o convidado interage direto aqui no palco ---
 
     function mostrarLojasShopping(lojas) {
+      // Cada loja é { nome, foto }. "foto" vem da coluna "Foto loja" da
+      // planilha do programa — se Gary não preencheu ainda, mostra só o
+      // nome (nunca quebra por falta de imagem).
       const botoes = lojas
-        .map(
-          (loja) => `<button class="loja-botao-palco" data-loja="${loja}">${loja}</button>`,
-        )
+        .map(({ nome, foto }) => {
+          const imagem = foto ? `<img src="${foto}" alt="${nome}" />` : '';
+          return `<button class="loja-botao-palco" data-loja="${nome}">${imagem}<span>${nome}</span></button>`;
+        })
         .join('');
       quadroAtual.innerHTML = `<div class="grade-lojas-palco">${botoes}</div>`;
       quadroAtual.querySelectorAll('.loja-botao-palco').forEach((botao) => {
